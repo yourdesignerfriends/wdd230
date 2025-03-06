@@ -16,6 +16,7 @@ body {
     height: 100vh;
     font-family: var(--main-font);
     margin: 0 auto;
+    padding: .2rem;
 }
 /* Header */
 header {
@@ -34,7 +35,7 @@ header img {
 }
 header span {
     margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 /* Navigation */
 nav {  
