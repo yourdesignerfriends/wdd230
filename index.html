@@ -6,23 +6,33 @@
     <title>Analina Del Vecchio Madriz - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development - Analina Del Vecchio Madriz - Course assignment portal ">
     <meta name="author" content="Analina Del Vecchio Madriz">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/media-query.css">
-    <link rel="stylesheet" href="styles/media-query-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <h1>Analina Del Vecchio Madriz - WDD 230 - Web Frontend Development</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="week01/holygrail.html" target="_blank">Week 1 CSS Layout Review</a></li>
-                <li><a href="week01/media-query.html" target="_blank">Week 1 CSS Media Queries</a></li>
-            </ul>
-        </nav>
+        <img src="images/profile.webp" alt="Analina Del Vecchio Madriz" width="368" height="540">
+        <span>Analina Del Vecchio Madriz</span>
     </header>
+    <nav>
+        <a class="active" href="#" target="_blank"> Home</a>
+        <a href="#" target="_blank"> Chamber</a>
+        <a href="#" target="_blank"> Site Plan</a>
+        <a href="#" target="_blank"> Form</a>
+    </nav>
+    <main>
+        <h1>WDD 230 - Web Frontend Development</h1>
+        <hr>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
