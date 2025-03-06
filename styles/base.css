@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root {
+    --primary-color: #4D7C8A;
+    --secondary-color: #00223D;
+    --accent-color: #ffffff;
+    --accent-color-1: #000000;
+    /* font */
+    --main-font: 'Lato', sans-serif;
+}
+/* The global selector */
+* {
+    box-sizing: border-box;
+}
+/* body */
+body {
+    height: 100vh;
+    font-family: var(--main-font);
+}
+/* Header */
+header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    font-style: italic;
+}
+header img {
+    width: 70px; 
+    height: auto; 
+    box-shadow: 0 0 2px var(--primary-color);
+}
+header span {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+/* Navigation */
+nav {  
+    justify-content: space-around;
+    background-color: var(--primary-color);
+}
+nav a {
+    display: block;
+    font-size: .8rem;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem;
+    transition: background-color 0.7s ease, color 0.7s ease;
+    width: 100%;
+    color: var(--accent-color-1);
+    border: 1px solid var(--secondary-color);
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+nav .active { 
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/* Main */
+main h1 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: .2rem;
+}
+main hr {
+    height: 1px; 
+    background-color: var(--secondary-color); 
+    border: none;
+}
+/* Footer */
+footer {
+    text-align: center;
+    font-size: .7rem;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 10px;
+}
