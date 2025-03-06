@@ -15,6 +15,7 @@
 body {
     height: 100vh;
     font-family: var(--main-font);
+    margin: 0 auto;
 }
 /* Header */
 header {
