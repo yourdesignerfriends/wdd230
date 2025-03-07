@@ -60,18 +60,9 @@ nav .active {
     background-color: rgba(255, 255, 255, 0.4);
 }
 /* Main */
-main h1 {
-    text-align: center;
-    margin-bottom: .2rem;
-    font-size: 1.5rem;
-}
-main hr {
-    height: 1px; 
-    background-color: var(--secondary-color); 
-    border: none;
-}
 .main-title {
-    margin: 0.5rem;
+    text-align: center;
+    margin: 5px;
 }
 .card {
     padding: 1rem;

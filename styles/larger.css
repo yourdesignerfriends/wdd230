@@ -13,16 +13,13 @@
         grid-column: 1 / 3;
         display: flex;
     }
-    main h1 {
+    .main-title {
         text-align: left;
+        grid-column: span 2;
     }
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
-    }
-    .main-title {
-        grid-column: span 2;
-        margin: 1rem;
     }
     footer {
         grid-column: 1 / 3;
