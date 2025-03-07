@@ -77,7 +77,7 @@ nav .active {
 /* Main */
 .main-title {
     margin: 5px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 .card {
     box-shadow: 0 0 6px var(--secondary-color);
