@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => { 
     const currentYear = new Date().getFullYear(); 
     const lastModified = document.lastModified; 
-    const author = "Analina Del Vecchio Madriz";
+    const author = "Analina Del Vecchio";
     const place = "Washington, USA";
 
     const copyrightElement = document.getElementById("copyright"); 

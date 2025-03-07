@@ -91,6 +91,24 @@ main hr {
 .card p {
     text-align: center;
 }
+.card ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+.card a {
+    text-decoration: none;
+    padding: .3rem;
+    transition: background-color 0.7s ease, color 0.7s ease;
+    color: var(--accent-color-1);
+    font-style: italic;
+}
+.card a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
 /* Footer */
 footer {
     text-align: center;
