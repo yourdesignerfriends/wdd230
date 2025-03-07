@@ -4,17 +4,16 @@
     --accent-color: #ffffff;
     --accent-color-1: #000000;
 }
+/* Global Styles */
 * {
     box-sizing: border-box;
 }
-/* body */
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin: 0 auto;
     padding: .2rem;
 }
-/* background-color: var(--secondary-color) */
 header, .card h2, footer {
     background-color: var(--secondary-color);
 }
