@@ -15,7 +15,14 @@
     }
     main h1 {
         text-align: left;
-        text-indent: 1rem;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .main-title {
+        grid-column: span 2;
+        margin: 1rem;
     }
     footer {
         grid-column: 1 / 3;
