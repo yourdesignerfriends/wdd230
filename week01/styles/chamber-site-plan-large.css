@@ -5,4 +5,13 @@
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .color-table {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .color-row {
+        flex: 1 1 calc(33.333% - 20px); 
+        max-width: calc(33.333% - 20px); 
+    }
 }

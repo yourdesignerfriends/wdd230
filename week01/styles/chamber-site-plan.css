@@ -38,3 +38,36 @@ section p {
 section h2 {
     color: var(--secondary-color);
 }
+.color-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.color-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.color-box {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.color-box.primary-color {
+    background-color: var(--primary-color);
+}
+.color-box.secondary-color {
+    background-color: var(--secondary-color);
+}
+.color-box.accent1-color {
+    background-color: var(--accent1-color);
+}
+.color-box.accent2-color {
+    background-color: var(--accent2-color);
+}
