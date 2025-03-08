@@ -78,10 +78,5 @@ img {
     width: 100%;
     max-width: 200px;
     height: auto;
-}
-.container {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 1rem;
+    margin: 1rem auto;
 }
