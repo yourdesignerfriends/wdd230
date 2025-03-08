@@ -72,3 +72,16 @@ section h2 {
 .color-box.accent2-color {
     background-color: var(--accent2-color);
 }
+/* Image */
+img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+}
