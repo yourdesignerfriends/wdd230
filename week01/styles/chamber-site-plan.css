@@ -15,6 +15,9 @@ body {
     padding: .2rem;
     background-color: var(--accent1-color);
 }
+header, section h2, section h3 {
+    text-align: center;
+}
 /* Header */
 header h1 {
     text-transform: uppercase;
@@ -23,7 +26,6 @@ header p {
     font-style: italic;
 }
 header {
-    text-align: center;
     color: var(--accent2-color);
 }
 /* Section */
