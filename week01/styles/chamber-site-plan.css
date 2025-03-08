@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #cf2b35;
+    --accent1-color: #ebeff6;
+    --accent2-color: #011e79;
+}
+* {
+	box-sizing: border-box;
+}
+/* Body */
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: .2rem;
+    background-color: var(--accent1-color);
+}
+/* Header */
+header h1 {
+    text-transform: uppercase;
+}
+header p {
+    font-style: italic;
+}
+header {
+    text-align: center;
+    color: var(--accent2-color);
+}
+/* Section */
+section {
+    padding: .5rem;
+    background-color: var(--primary-color);
+    margin: 1rem;
+}
+section p {
+    text-align: left;
+}
+section h2 {
+    color: var(--secondary-color);
+}

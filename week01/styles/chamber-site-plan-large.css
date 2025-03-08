@@ -1,0 +1,8 @@
+@media screen and (min-width: 500px) {
+    body {
+        max-width: 980px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
