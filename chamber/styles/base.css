@@ -4,6 +4,15 @@
     --accent1-color: #ebeff6;
     --accent2-color: #011e79;
 }
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
 main {
     background-color: var(--primary-color);
 }
