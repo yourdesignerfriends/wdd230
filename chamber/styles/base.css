@@ -39,7 +39,7 @@ nav {
 .navigation {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     list-style: none;
     background-color: var(--primary-color);
 }
