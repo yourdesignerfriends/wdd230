@@ -5,13 +5,13 @@
     --accent2-color: #011e79;
 }
 * {
-    margin: 0 auto;
-    padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    margin: 0 auto;
+    padding: .2rem;
 }
 main {
     background-color: var(--accent1-color);
@@ -20,28 +20,32 @@ main {
 header {
     display: block;
     align-items: center;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
 }
 header h1 {
-    color: var(--primary-color);
+    color: var(--accent2-color);
     padding: 10px;
+    text-transform: uppercase;
 }
 /* Navigation */
 .navigation {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    text-align: center;
+    justify-content: space-around;
+    background-color: var(--primary-color);
 }
 .navigation a {
-    display: none;
-    padding: 20px;
+    display: block;
+    width: 100%;
     text-decoration: none;
-    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem;
 }
 .navigation a:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+nav .active { 
+    background-color: rgba(255, 255, 255, 0.4);
 }
 /* hamburger menu button */
 #menu {
@@ -62,8 +66,8 @@ header h1 {
     right: 1rem;
 }
 #menu:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     transform: scale(1.1);
 }
 #menu::before {
@@ -84,5 +88,5 @@ footer {
     text-align: center;
     background-color: var(--accent2-color);
     color: var(--primary-color);
-    padding: 20px;
+    padding: 1rem;
 }
