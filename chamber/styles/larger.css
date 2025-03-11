@@ -2,18 +2,17 @@
     body {
         max-width: 980px;
     }
-    header {
-        display: flex;
+    h1 {
+        text-align: center;
     }
-    /* hamburger menu button Hidden */
     #menu {
-		display: none;
-	}
-    /* Navigation */
-    .navigation {
-        display: flex;
+        display: none;
     }
-	.navigation a {
-		display: block;
-	}
+    .navigation {
+        flex-direction: row;
+    }
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
 }

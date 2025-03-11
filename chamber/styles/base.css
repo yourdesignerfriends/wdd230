@@ -6,14 +6,12 @@
 }
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    margin: 0 auto;
-    padding: .2rem;
-}
-main {
     background-color: var(--accent1-color);
 }
 /* Header */
@@ -28,60 +26,52 @@ header h1 {
     text-transform: uppercase;
 }
 /* Navigation */
-.navigation {
-    justify-content: space-around;
-    background-color: var(--primary-color);
-}
-.navigation a {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 0.5rem;
-}
-.navigation a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
 }
 nav .active { 
     background-color: rgba(255, 255, 255, 0.4);
 }
 /* hamburger menu button */
 #menu {
+    font-size: 1.5rem;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    border: solid 1px var(--secondary-color);
-    border-radius: 50%;
-    padding: 0px;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    justify-content: center;
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
-#menu:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    transform: scale(1.1);
-}
+
+/* Menu */
 #menu::before {
-    content: "\2630";
+    content: "☰";
 }
+
 #menu.open::before {
-    content: "X";
+    content: "❌";
 }
-.navigation.open a {
-    display: block;
-    width: 100%;
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
 }
-.hidden {
+.navigation a {
     display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.open a {
+    display: block;
+}
+.active { 
+    background-color: rgba(255, 255, 255, 0.4);
 }
 /* Footer */
 footer {
