@@ -14,13 +14,13 @@ body {
     font-weight: 400;
 }
 main {
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
 }
 /* Header */
 header {
     display: block;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
 }
 header h1 {
     color: var(--primary-color);
@@ -37,7 +37,6 @@ header h1 {
     display: none;
     padding: 20px;
     text-decoration: none;
-    color: var(--primary-color);
     font-weight: 700;
 }
 .navigation a:hover {
@@ -79,4 +78,11 @@ header h1 {
 }
 .hidden {
     display: none;
+}
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    padding: 20px;
 }
