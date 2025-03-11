@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #cf2b35;
+    --accent1-color: #ebeff6;
+    --accent2-color: #011e79;
+}
+main {
+    background-color: var(--primary-color);
+}
+/* Header */
+header {
+    display: block;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+header h1 {
+    color: var(--primary-color);
+    padding: 10px;
+}
+/* Navigation */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+.navigation a {
+    display: none;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+/* hamburger menu button */
+#menu {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid 1px var(--secondary-color);
+    border-radius: 50%;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+#menu:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+#menu::before {
+    content: "\2630";
+}
+#menu.open::before {
+    content: "X";
+}
+.navigation.open a {
+    display: block;
+    width: 100%;
+}
+.hidden {
+    display: none;
+}

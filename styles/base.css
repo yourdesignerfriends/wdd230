@@ -4,6 +4,11 @@
     --accent-color: #ffffff;
     --accent-color-1: #000000;
 }
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Global Styles */
 * {
     box-sizing: border-box;
