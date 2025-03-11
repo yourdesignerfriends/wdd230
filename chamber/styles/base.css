@@ -6,13 +6,13 @@
 }
 * {
     box-sizing: border-box;
-    margin: 0 auto;
     padding: 0;
 }
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     background-color: var(--accent1-color);
+    margin: auto;
 }
 /* Header */
 header {
