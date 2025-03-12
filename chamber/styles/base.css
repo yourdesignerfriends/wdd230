@@ -86,21 +86,15 @@ footer {
     background-color: rgba(0, 0, 0, 0.1);
     color: var(--accent2-color);
     padding: 1rem;
+    font-size: .9rem;
 }
 footer section {
     padding: .5rem;
     padding: 0;
-    font-size: .9rem;
 }
 footer img {
     width: 80px; 
     height: auto; 
-}
-#copyright #lastModified {
-    margin-top: 1.5rem;
-    font-size: .7rem;
-    color: var(--accent2-color);
-    font-weight: 600;
 }
 .links {
     list-style: none;
@@ -112,4 +106,10 @@ footer img {
 }
 .links a:hover {
     text-decoration: underline;
+}
+#copyright {
+    margin-top: 1.5rem;
+    font-size: .7rem;
+    color: var(--accent2-color);
+    font-weight: 600;
 }
