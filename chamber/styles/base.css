@@ -69,6 +69,7 @@ nav .active {
     top: 1rem;
     right: 1rem;
     border: none;
+    background: none;
     width: 4rem;
     height: 4rem;
 }
