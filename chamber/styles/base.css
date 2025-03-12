@@ -44,6 +44,7 @@ nav {
     text-align: center;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 600;
     color: var(--secondary-color);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
