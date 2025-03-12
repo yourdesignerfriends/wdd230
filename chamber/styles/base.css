@@ -69,10 +69,12 @@ nav .active {
     top: 1rem;
     right: 1rem;
     border: none;
+    width: 4rem;
+    height: 4rem;
 }
 /* Menu */
 #menu::before {
-    content: "☰";
+    content: "=";
 }
 #menu.open::before {
     content: "x";
