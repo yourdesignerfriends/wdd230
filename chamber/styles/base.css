@@ -29,7 +29,7 @@ header h1 {
     text-transform: uppercase;
     margin: 0;
 }
-header img, footer img {
+header img {
     width: 80px; 
     height: auto; 
     margin: .5rem;
@@ -86,13 +86,17 @@ footer {
     background-color: rgba(0, 0, 0, 0.1);
     color: var(--accent2-color);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    padding: .5rem;
+    padding: 1rem;
     line-height: .3rem;
 }
 footer section {
     padding: .5rem;
     padding: 0;
     font-size: .8rem;
+}
+footer img {
+    width: 80px; 
+    height: auto; 
 }
 #copyright {
     margin-top: 1.5rem;
