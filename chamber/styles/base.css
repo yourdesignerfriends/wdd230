@@ -75,7 +75,7 @@ nav .active {
     content: "☰";
 }
 #menu.open::before {
-    content: "X";
+    content: "x";
 }
 .open a {
     display: block;
