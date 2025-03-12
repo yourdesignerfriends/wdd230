@@ -16,14 +16,15 @@ body {
 }
 /* Header */
 header {
-    display: flex;
+    /*display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;*/
+    text-align: center;
     background-color: var(--accent1-color);
+    margin: .5rem;
 }
 header h1 {
     color: var(--accent2-color);
-    padding: 10px;
     text-transform: uppercase;
 }
 header img {
