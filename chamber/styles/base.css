@@ -74,7 +74,7 @@ nav .active {
 }
 /* Menu */
 #menu::before {
-    content: "=";
+    content: "Menu";
 }
 #menu.open::before {
     content: "x";
