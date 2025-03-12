@@ -7,12 +7,12 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0 auto;
 }
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     background-color: var(--accent1-color);
+    margin: auto;
 }
 /* Header */
 header {
@@ -27,10 +27,12 @@ header {
 header h1 {
     color: var(--accent2-color);
     text-transform: uppercase;
+    margin: 0;
 }
 header img {
     width: 80px; 
     height: auto; 
+    margin: .5rem;
 }
 /* Navigation */
 nav {
