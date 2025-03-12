@@ -72,9 +72,6 @@ nav .active {
     width: 4rem;
     height: 4rem;
 }
-#menu:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
 /* Menu */
 #menu::before {
     content: "☰";
