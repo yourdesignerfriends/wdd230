@@ -22,6 +22,7 @@ header {
     text-align: center;
     background-color: var(--accent1-color);
     margin: .5rem;
+    padding: .5rem;
 }
 header h1 {
     color: var(--accent2-color);
