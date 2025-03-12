@@ -29,7 +29,7 @@ header h1 {
     text-transform: uppercase;
     margin: 0;
 }
-header img {
+header img, footer img {
     width: 80px; 
     height: auto; 
     margin: .5rem;
@@ -83,7 +83,17 @@ nav .active {
 /* Footer */
 footer {
     text-align: center;
-    background-color: var(--accent2-color);
-    color: var(--primary-color);
-    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: .5rem;
 }
+footer section {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
+    padding: .5rem;
+}
+#copyright {
+    font-size: .8rem;
+    color: #cf2b35;
+    font-weight: 600;
+  }
