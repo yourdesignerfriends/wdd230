@@ -92,10 +92,10 @@ footer section {
     padding: .5rem;
     padding: 0;
 }
-footer img {
+/*footer img {
     width: 80px; 
     height: auto; 
-}
+}*/
 .links {
     list-style: none;
 }
@@ -109,7 +109,20 @@ footer img {
 }
 #copyright {
     margin-top: 1.5rem;
-    font-size: .7rem;
+    font-size: .8rem;
     color: var(--accent2-color);
     font-weight: 600;
+}
+.social {
+    display: flex;
+}
+.social a {
+    padding: .2rem;
+}
+.social a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.social img {
+    width: 20px; 
+    height: auto;  
 }
