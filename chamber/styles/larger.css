@@ -13,4 +13,13 @@
         display: block;
         flex: 1 1 100%;
     }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .5rem;
+    }
+    footer > div:nth-child(5) {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
 }
