@@ -13,14 +13,29 @@
         display: block;
         flex: 1 1 100%;
     }
+    /*
     footer {
         display: grid;
-        grid-template-columns: repeat(4, 200px);
+        grid-template-columns: repeat(4, 250px);
         gap: .5rem;
         justify-content:center;
     }
     footer > div:nth-child(5) {
         grid-column: 1 / -1;
+        text-align: center;
+    }*/
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem; 
+    }  
+    .footer-container > div {
+        flex: 1 1 250px;
+        max-width: 250px;
+        padding: 10px;
+    }
+    #copyright {
         text-align: center;
     }
 }
