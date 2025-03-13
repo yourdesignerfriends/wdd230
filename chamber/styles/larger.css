@@ -15,8 +15,9 @@
     }
     footer {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 200px);
         gap: .5rem;
+        justify-content:center;
     }
     footer > div:nth-child(5) {
         grid-column: 1 / -1;
