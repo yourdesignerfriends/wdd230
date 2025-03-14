@@ -70,7 +70,7 @@ nav a {
     width: 100%;
     border: 1px solid var(--secondary-color);
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 /* Main */
 .main-title {
