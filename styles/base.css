@@ -44,14 +44,20 @@ nav a, .card h2 {
 nav a:hover, nav .active {
     background-color: rgba(0, 0, 0, 0.2);
 }
+#menu, #darkBtn {
+    cursor: pointer;
+    border: none;
+    position: absolute;
+}
 /* Header */
 header {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: left; 
     font-weight: 100;
+    position: relative;
 }
-header img {
+.profile {
     width: 80px; 
     height: auto; 
     box-shadow: 0 0 2px var(--primary-color);
@@ -78,15 +84,12 @@ header span {
 #menu {
     font-size: 2rem;
     color: var(--accent-color);
-    position: absolute;
-    top: .5rem;
-    right: .5rem;
-    border: none;
+    top: 4rem;
+    right: 1rem;
     background: none;
     width: 4rem;
     height: 4rem;
 }
-/* Menu */
 #menu::before {
     content: "☰";
 }
@@ -96,10 +99,26 @@ header span {
 .open a {
     display: block;
 }
+/* Dark mode Btn */
+#darkBtn {
+    top: 3rem;
+    right: 2.3rem;
+    width: 24px;
+    height: auto; 
+}
+.dark-mode {
+    background-color: var(--accent-color-1);
+}
+.dark-mode .main-title h1, .dark-mode .card a, .dark-mode {
+    color: var(--accent-color);
+}
 /* Main */
 .main-title {
     margin: 5px;
     font-size: 0.7rem;
+}
+.main-title h1 {
+    color: var(--secondary-color);
 }
 .card {
     box-shadow: 0 0 6px var(--secondary-color);
