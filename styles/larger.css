@@ -11,8 +11,16 @@
         grid-column: 1 / 3;
     }
     /* Navigation */
-    nav {
-        display: flex;
+    #menu {
+        display: none;
+    }
+    .navigation {
+        flex-direction: row;
+        width: 100%;
+    }
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
     }
     .main-title {
         text-align: left;
