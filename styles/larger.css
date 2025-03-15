@@ -15,12 +15,17 @@
         display: none;
     }
     /* Navigation */
-    .navigation {
-        flex-direction: row;
-        width: 100%;
-    }
     .navigation a {
         display: block;
         flex: 1 1 100%;
+    }
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigation li {
+        width: 100%;
     }
 }
