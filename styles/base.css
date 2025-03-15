@@ -85,7 +85,7 @@ header span {
     font-size: 2rem;
     color: var(--accent-color);
     top: 4rem;
-    right: 1rem;
+    right: 0.5rem;
     background: none;
     width: 4rem;
     height: 4rem;
@@ -102,7 +102,7 @@ header span {
 /* Dark mode Btn */
 #darkBtn {
     top: 3rem;
-    right: 2.3rem;
+    right: 1.6rem;
     width: 24px;
     height: auto; 
 }
