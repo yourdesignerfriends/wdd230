@@ -76,11 +76,11 @@ header span {
 }
 /* hamburger menu button */
 #menu {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--accent-color);
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: .5rem;
+    right: .5rem;
     border: none;
     background: none;
     width: 4rem;
