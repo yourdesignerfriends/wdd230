@@ -7,12 +7,12 @@
 /* Global Styles */
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    margin: 0 auto;
-    padding: .2rem;
+    margin: auto;
 }
 header, .card h2, footer {
     background-color: var(--secondary-color);
