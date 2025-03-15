@@ -20,23 +20,15 @@ header, .card h2, footer {
 header, .card {
     padding: 1rem;
 }
-header, footer, .card h2, nav a {
-    color: var(--accent-color);
-}
 nav a, .main-title, .card h2, .card p, footer {
     text-align: center;
 }
-.card a {
-    color: var(--accent-color-1);
-}
 nav a, .card a {
     text-decoration: none;
+    transition: background-color 0.7s ease, color 0.7s ease;
 }
 header, .card a {
     font-style: italic;
-}
-nav a, .card a {
-    transition: background-color 0.7s ease, color 0.7s ease;
 }
 nav a, .card h2 {
     padding: 0.5rem;
@@ -48,6 +40,9 @@ nav a:hover, nav .active {
     cursor: pointer;
     border: none;
     position: absolute;
+}
+.dark-mode .main-title h1, .dark-mode .card a, .dark-mode, #menu, header, footer, .card h2, nav a {
+    color: var(--accent-color);
 }
 /* Header */
 header {
@@ -83,7 +78,6 @@ header span {
 /* hamburger menu button */
 #menu {
     font-size: 2rem;
-    color: var(--accent-color);
     top: 4rem;
     right: 0.5rem;
     background: none;
@@ -108,9 +102,6 @@ header span {
 }
 .dark-mode {
     background-color: var(--accent-color-1);
-}
-.dark-mode .main-title h1, .dark-mode .card a, .dark-mode {
-    color: var(--accent-color);
 }
 /* Main */
 .main-title {
@@ -139,6 +130,7 @@ header span {
 }
 .card a {
     padding: .3rem;
+    color: var(--accent-color-1);
 }
 .card a:hover {
     background-color: rgba(0, 0, 0, 0.2);
