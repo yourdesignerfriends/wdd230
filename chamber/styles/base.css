@@ -34,6 +34,7 @@ header img {
 .navigation ul {
     list-style: none;
     margin: 0;
+    text-align: center;
 }
 .navigation a {
     display: none;
