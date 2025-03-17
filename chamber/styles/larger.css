@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     h1 {
         text-align: center;
     }
@@ -12,6 +12,15 @@
     .navigation a {
         display: block;
         flex: 1 1 100%;
+    }
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigation li {
+        width: 100%;
     }
     .footer-container {
         display: flex;

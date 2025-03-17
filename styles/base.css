@@ -44,18 +44,15 @@ header span {
 }
 .navigation a {
     display: none;
-    padding: 1rem;
+    padding: .5rem;
     font-size: 1.2rem;
     font-weight: 500;
-}
-nav a {
     text-decoration: none;
     transition: background-color 0.7s ease, color 0.7s ease;
-    padding: 0.5rem;
     text-align: center;
     color: var(--accent-color);
 }
-nav a:hover, nav .active {
+.navigation a:hover, nav .active {
     background-color: rgba(0, 0, 0, 0.2);
 }
 /* hamburger menu button */
