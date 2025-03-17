@@ -7,7 +7,6 @@
     }
     .navigation {
         flex-direction: row;
-        width: 100%;
     }
     .navigation a {
         display: block;
