@@ -94,6 +94,9 @@ footer section {
     color: var(--accent2-color);
     text-decoration: none;
 }
+.links li {
+    margin-bottom: .5rem;
+}
 .links a:hover {
     text-decoration: underline;
 }
