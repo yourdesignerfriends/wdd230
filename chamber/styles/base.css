@@ -83,11 +83,9 @@ footer {
     background-color: rgba(0, 0, 0, 0.1);
     color: var(--accent2-color);
     padding: 1rem;
-    font-size: .9rem;
 }
 footer section {
     padding: .5rem;
-    padding: 0;
 }
 .links {
     list-style: none;
@@ -95,14 +93,13 @@ footer section {
 .links a {
     color: var(--accent2-color);
     text-decoration: none;
-    font-size: .9rem;
 }
 .links a:hover {
     text-decoration: underline;
 }
 #copyright {
     margin-top: 1.5rem;
-    font-size: .8rem;
+    font-size: .9rem;
     color: var(--accent2-color);
     font-weight: 600;
 }
@@ -110,7 +107,7 @@ footer section {
     display: flex;
 }
 .social a {
-    padding: .2rem;
+    padding: .5rem;
 }
 .social a:hover {
     background-color: rgba(0, 0, 0, 0.2);
