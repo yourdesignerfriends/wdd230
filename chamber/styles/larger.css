@@ -35,4 +35,7 @@
     #copyright {
         text-align: center;
     }
+    .header-div {
+        display: flex;
+    } 
 }
