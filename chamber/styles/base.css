@@ -50,10 +50,10 @@ header img {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .navigation a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .navigation .active { 
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 /* hamburger menu button */
 #menu {
@@ -80,7 +80,7 @@ header img {
 /* Footer */
 footer {
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
     color: var(--accent2-color);
     padding: 1rem;
 }
@@ -111,9 +111,6 @@ footer section {
 }
 .social a {
     padding: .5rem;
-}
-.social a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
 }
 .social img {
     width: 20px; 
