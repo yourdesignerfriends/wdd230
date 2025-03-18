@@ -149,7 +149,8 @@ footer section {
     border-radius: 5px;
 }
 .hero-btn:hover {
-    color: var(--accent2-color);
+    background-color: #011e79;
+    color: var(--primary-color);
 }
 /* Dark mode Btn */
 #darkBtn {
