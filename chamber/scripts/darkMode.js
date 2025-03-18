@@ -9,7 +9,7 @@ modeButton.addEventListener("click", () => {
         modeButton.alt = "Switch to light mode";
         modeButton.setAttribute("aria-label", "Activate light mode");
     } else {
-        modeButton.src = "images/dark.svg";
+        modeButton.src = "images/night.svg";
         modeButton.alt = "Switch to dark mode";
         modeButton.setAttribute("aria-label", "Activate dark mode");
     }
