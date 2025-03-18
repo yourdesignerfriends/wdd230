@@ -38,6 +38,6 @@
     .header-div {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content:left;
     } 
 }
