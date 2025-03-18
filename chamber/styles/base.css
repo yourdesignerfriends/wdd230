@@ -104,35 +104,29 @@ footer section {
     width: 20px; 
     height: auto;  
 }
+/* Hero */
 .hero {
     background-image: url('../images/hero.webp');
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
     text-align: center;
-    position: relative;
     padding: 0 20px;
-}
-.hero-content {
-    z-index: 2;
-    position: relative;
 }
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
-
 .hero-content p {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
-
 .hero-btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -147,17 +141,6 @@ footer section {
 .hero-btn:hover {
     color: var(--accent2-color);
 }
-/*
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1; 
-}*/
 /* Dark mode Btn */
 #darkBtn {
     top: 1.5rem;
