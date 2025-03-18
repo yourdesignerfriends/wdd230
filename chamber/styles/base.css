@@ -53,7 +53,7 @@ header img {
     color: var(--secondary-color);
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 4rem;
     border: none;
     background: none;
     width: 4rem;
@@ -117,7 +117,7 @@ footer section {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--primary-color);
     text-align: center;
     position: relative;
     padding: 0 20px;
