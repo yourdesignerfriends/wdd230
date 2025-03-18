@@ -11,8 +11,8 @@ modeButton.addEventListener("click", () => {
         const headerLogo = document.querySelector('header img');
         headerLogo.src = "images/logo-dark.webp";
         headerLogo.alt = "Logo in dark mode";
-        headerLogo.width = 680;
-        headerLogo.height = 736;
+        headerLogo.width = 684;
+        headerLogo.height = 530;
 
         document.querySelector('[aria-label="facebook"] img').src = "images/facebook-dark.svg";
         document.querySelector('[aria-label="facebook"] img').alt = "Facebook in dark mode";
@@ -41,8 +41,8 @@ modeButton.addEventListener("click", () => {
         const headerLogo = document.querySelector('header img');
         headerLogo.src = "images/logo-3.webp";
         headerLogo.alt = "Logo";
-        headerLogo.width = 680;
-        headerLogo.height = 736;
+        headerLogo.width = 626;
+        headerLogo.height = 523;
 
         document.querySelector('[aria-label="facebook"] img').src = "images/facebook.svg";
         document.querySelector('[aria-label="facebook"] img').alt = "Facebook";
