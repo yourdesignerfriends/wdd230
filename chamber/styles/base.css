@@ -105,7 +105,7 @@ footer section {
     height: auto;  
 }
 .hero {
-    background-image: url('../images/olympia-washington.webp');
+    background-image: url('../images/hero.webp');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -147,6 +147,7 @@ footer section {
 .hero-btn:hover {
     color: var(--accent2-color);
 }
+/*
 .hero::before {
     content: '';
     position: absolute;
@@ -156,7 +157,7 @@ footer section {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1; 
-}
+}*/
 /* Dark mode Btn */
 #darkBtn {
     top: 1.5rem;
