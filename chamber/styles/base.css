@@ -56,8 +56,6 @@ header img {
     right: 4rem;
     border: none;
     background: none;
-    width: 4rem;
-    height: 4rem;
     cursor: pointer;
 }
 /* Menu */
@@ -164,7 +162,7 @@ footer section {
 }
 /* Dark mode Btn */
 #darkBtn {
-    top: 3rem;
+    top: 1.8rem;
     right: 1.6rem;
     width: 40px;
     height: auto; 
