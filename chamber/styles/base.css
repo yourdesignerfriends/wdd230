@@ -162,3 +162,13 @@ footer section {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1; 
 }
+/* Dark mode Btn */
+#darkBtn {
+    top: 3rem;
+    right: 1.6rem;
+    width: 40px;
+    height: auto; 
+    cursor: pointer;
+    border: none;
+    position: absolute;
+}
