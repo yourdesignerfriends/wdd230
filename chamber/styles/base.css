@@ -11,7 +11,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     margin: auto;
 }
 /* Header */
