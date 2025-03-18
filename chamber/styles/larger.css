@@ -1,4 +1,7 @@
 @media screen and (min-width: 600px) {
+    body {
+        max-width: 1200px;
+    }
     h1 {
         text-align: center;
     }
