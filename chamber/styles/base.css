@@ -11,7 +11,6 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    background-color: var(--primary-color);
     margin: auto;
 }
 /* Header */
@@ -20,7 +19,6 @@ header {
     align-items: center;
     justify-content: left; 
     position: relative;
-    background-color: var(--accent1-color);
     padding: 1rem;
 }
 header img {
@@ -29,7 +27,6 @@ header img {
 }
 /* Header Navigation */
 .navigation {
-    background-color: var(--accent1-color);
     margin-left: 1rem;
 }
 .navigation ul {
@@ -72,7 +69,6 @@ header img {
 /* Footer */
 footer {
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.8);
     color: var(--accent2-color);
     padding: 1rem;
 }
@@ -171,9 +167,6 @@ footer section {
     border: none;
     position: absolute;
 }
-.dark-mode {
-    background-color: var(--accent2-color);
-}
 .dark-mode .navigation a, 
 .dark-mode #menu,
 .dark-mode footer,
@@ -181,6 +174,7 @@ footer section {
 .dark-mode .links a  {
     color: var(--primary-color);
 }
+.dark-mode,
 .dark-mode .navigation a:hover, 
 .dark-mode .navigation .active, 
 .dark-mode .navigation, 
