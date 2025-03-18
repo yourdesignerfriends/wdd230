@@ -30,6 +30,7 @@ header img {
 /* Header Navigation */
 .navigation {
     background-color: var(--accent1-color);
+    margin-left: .5rem;
 }
 .navigation ul {
     list-style: none;
