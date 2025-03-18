@@ -170,3 +170,12 @@ footer section {
     border: none;
     position: absolute;
 }
+.dark-mode {
+    background-color: var(--accent2-color);
+}
+.dark-mode .navigation a{
+    color: var(--primary-color);
+}
+.dark-mode .navigation a:hover, .dark-mode .navigation .active, .dark-mode .navigation {
+    background-color: var(--accent2-color);
+}
