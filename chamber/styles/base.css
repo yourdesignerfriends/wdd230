@@ -174,9 +174,9 @@ footer section {
 .dark-mode {
     background-color: var(--accent2-color);
 }
-.dark-mode .navigation a{
+.dark-mode .navigation a, .dark-mode #menu {
     color: var(--primary-color);
 }
-.dark-mode .navigation a:hover, .dark-mode .navigation .active, .dark-mode .navigation {
+.dark-mode .navigation a:hover, .dark-mode .navigation .active, .dark-mode .navigation, .dark-mode header {
     background-color: var(--accent2-color);
 }
