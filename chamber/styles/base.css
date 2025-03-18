@@ -174,9 +174,17 @@ footer section {
 .dark-mode {
     background-color: var(--accent2-color);
 }
-.dark-mode .navigation a, .dark-mode #menu {
+.dark-mode .navigation a, 
+.dark-mode #menu,
+.dark-mode footer,
+.dark-mode #copyright,
+.dark-mode .links a  {
     color: var(--primary-color);
 }
-.dark-mode .navigation a:hover, .dark-mode .navigation .active, .dark-mode .navigation, .dark-mode header {
+.dark-mode .navigation a:hover, 
+.dark-mode .navigation .active, 
+.dark-mode .navigation, 
+.dark-mode header,
+.dark-mode footer {
     background-color: var(--accent2-color);
 }
