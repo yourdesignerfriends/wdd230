@@ -53,7 +53,7 @@ header img {
     color: var(--secondary-color);
     position: absolute;
     top: 1rem;
-    right: 4rem;
+    right: 4.5rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -162,8 +162,8 @@ footer section {
 }
 /* Dark mode Btn */
 #darkBtn {
-    top: 1.5rem;
-    right: 1.6rem;
+    top: 1.7rem;
+    right: 1.5rem;
     width: 40px;
     height: auto; 
     cursor: pointer;
