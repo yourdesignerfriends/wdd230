@@ -94,4 +94,8 @@
         background-color: var(--secondary-color);
         color: var(--primary-color);
     }
+    .company-spotlights .event-card {
+        flex: 1 1 calc(33.33% - 20px); 
+        max-width: calc(33.33% - 20px); 
+    }
 }
