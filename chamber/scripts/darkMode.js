@@ -11,8 +11,8 @@ modeButton.addEventListener("click", () => {
         const headerLogo = document.querySelector('header img');
         headerLogo.src = "images/logo-dark.webp";
         headerLogo.alt = "Logo in dark mode";
-        headerLogo.width = 684;
-        headerLogo.height = 530;
+        headerLogo.width = 100;
+        headerLogo.height = 84;
 
         document.querySelector('[aria-label="facebook"] img').src = "images/facebook-dark.svg";
         document.querySelector('[aria-label="facebook"] img').alt = "Facebook in dark mode";
