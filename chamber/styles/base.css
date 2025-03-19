@@ -186,7 +186,11 @@ footer section {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #011e79;
+    color: var(--accent2-color);
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 1.5rem; 
 }
 
 .card-container {
