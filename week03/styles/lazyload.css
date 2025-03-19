@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    background: lightpink;
+    padding: 2rem;
+}
+main {
+    background: coral;
+    height: 100%;
+    padding: 1rem;
+}
+footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+}
