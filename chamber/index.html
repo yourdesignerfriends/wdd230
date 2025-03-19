@@ -42,7 +42,11 @@
     </div>
     <main>
         <div class="hero">
-            <img src="images/hero.webp" alt="Olympia Washington" width="1222" height="808" class="hero-image">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)" class="hero-image">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)" class="hero-image">
+                <img src="images/hero-small.webp" alt="Olympia Washington" width="500" height="331" class="hero-image">
+            </picture>
             <div class="hero-content">
                 <h1>Olympia Chamber of Commerce</h1>
                 <p>Grow Your Business</p>
