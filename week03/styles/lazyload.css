@@ -10,8 +10,7 @@ header, footer {
 main {
     margin: 0 auto;
     width: 400px;
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 img {
     width: 100%;
