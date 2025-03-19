@@ -47,17 +47,17 @@
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
+    .company-spotlights .event-card {
+        flex: 1 1 calc(33.33% - 20px); 
+        max-width: calc(33.33% - 20px); 
+    }
+    /* Weather */
     .weather-card {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         gap: 2rem;
     }
-    .company-spotlights .event-card {
-        flex: 1 1 calc(33.33% - 20px); 
-        max-width: calc(33.33% - 20px); 
-    }
-    /* Weather */
     .weather {
         max-width: 800px;
         margin: 3rem auto;
