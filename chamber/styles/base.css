@@ -128,6 +128,10 @@ header img {
     letter-spacing: 2px; 
     margin-bottom: 1.5rem; 
 }
+.event-card p {
+    font-size: 1rem;
+    color: var(--accent2-color);
+}
 /* Main Card */
 .card-container {
     display: flex;
@@ -141,20 +145,26 @@ header img {
     padding: 15px;
     text-align: center;
 }
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
 .event-img {
     width: 100%; 
     height: auto;
     border-radius: 8px;
     object-fit: cover;
 }
+.weather-img {
+    width: 120px;
+    height: auto;
+}
 .event-card h3 {
     font-size: 1.4rem;
     margin: 10px 0;
     color: var(--secondary-color);
-}
-.event-card p {
-    font-size: 1rem;
-    color: #555;
 }
 .event-card h3 + p {
     font-size: 1.2rem;
@@ -188,16 +198,6 @@ header img {
     margin: 2rem auto;
     padding: 1.5rem;
     text-align: center;
-}
-.weather-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.weather-img {
-    width: 120px;
-    height: auto;
 }
 .weather-details p {
     background-color: var(--accent1-color);
