@@ -107,7 +107,7 @@ footer section {
 /* Hero */
 .hero {
     position: relative;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@ footer section {
     text-align: center; 
 }
 .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     letter-spacing: 2px; 
     text-transform: uppercase;
