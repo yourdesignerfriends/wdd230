@@ -177,3 +177,71 @@ footer section {
 .dark-mode footer {
     background-color: var(--accent2-color);
 }
+.upcoming-events {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+.upcoming-events h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #011e79;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.event-img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: var(--secondary-color);
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #555;
+}
+.event-card h3 + p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent2-color);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.read-more-btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: var(--accent2-color); 
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: var(--secondary-color); 
+    transform: scale(1.05);
+    color: var(--primary-color); 
+}
