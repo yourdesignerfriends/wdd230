@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     body {
         max-width: 1200px;
     }
@@ -55,5 +55,43 @@
     .event-card {
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
+    }
+    .weather {
+        max-width: 800px;
+        margin: 3rem auto;
+        padding: 2rem;
+    }
+
+    .weather-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .weather-img {
+        width: 250px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .weather-details {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .weather-details p {
+        padding: 1rem 1.5rem;
+        margin: 0.8rem 0;
+        border-radius: 12px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    .weather-details p:hover {
+        transform: scale(1.05);
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
     }
 }
