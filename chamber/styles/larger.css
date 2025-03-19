@@ -5,6 +5,12 @@
     h1 {
         text-align: center;
     }
+    /* Header */
+    .header-div {
+        display: flex;
+        align-items: center;
+        justify-content:left;
+    } 
     /* Hamburguer Menu */
     #menu {
         display: none;
@@ -26,14 +32,11 @@
     .navigation li {
         width: 100%;
     }
-    .header-div {
-        display: flex;
-        align-items: center;
-        justify-content:left;
-    } 
+    /* Main Hero */
     .hero {
         height: 70vh;
     }
+    
     .card-container {
         flex-direction: row;
         flex-wrap: wrap;
