@@ -25,7 +25,7 @@ header img {
     width: 60px; 
     height: auto; 
 }
-/* Header Navigation */
+/* Navigation */
 .navigation {
     margin-left: 1rem;
 }
@@ -56,7 +56,6 @@ header img {
     background: none;
     cursor: pointer;
 }
-/* Menu */
 #menu::before {
     content: "☰";
 }
@@ -66,7 +65,7 @@ header img {
 .open a {
     display: block;
 }
-/* Hero */
+/* Main Hero */
 .hero {
     position: relative;
     height: 40vh;
@@ -116,6 +115,20 @@ header img {
     background-color: #011e79;
     color: var(--primary-color);
 }
+/* Main Global Styles */
+.upcoming-events h2,
+.weather h2,
+.company-spotlights h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--accent2-color);
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 1.5rem; 
+}
+/* Main Card */
 .card-container {
     display: flex;
     flex-direction: column;
@@ -134,13 +147,11 @@ header img {
     border-radius: 8px;
     object-fit: cover;
 }
-
 .event-card h3 {
     font-size: 1.4rem;
     margin: 10px 0;
     color: var(--secondary-color);
 }
-
 .event-card p {
     font-size: 1rem;
     color: #555;
@@ -164,23 +175,10 @@ header img {
     margin-top: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .read-more-btn:hover {
     background-color: var(--secondary-color); 
     transform: scale(1.05);
     color: var(--primary-color); 
-}
-.upcoming-events h2,
-.weather h2,
-.company-spotlights h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: var(--accent2-color);
-    font-weight: bold; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    margin-bottom: 1.5rem; 
 }
 .weather {
     background-color: var(--primary-color);
@@ -197,7 +195,6 @@ header img {
     align-items: center;
     gap: 1rem;
 }
-
 .weather-img {
     width: 120px;
     height: auto;
