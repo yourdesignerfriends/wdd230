@@ -66,44 +66,6 @@ header img {
 .open a {
     display: block;
 }
-/* Footer */
-footer {
-    text-align: left;
-    color: var(--accent2-color);
-    padding: 1rem;
-}
-footer section {
-    padding: .5rem;
-}
-.links {
-    list-style: none;
-}
-.links a {
-    color: var(--accent2-color);
-    text-decoration: none;
-}
-.links li {
-    margin-bottom: .5rem;
-}
-.links a:hover {
-    text-decoration: underline;
-}
-#copyright {
-    margin-top: 1.5rem;
-    font-size: .9rem;
-    color: var(--accent2-color);
-    font-weight: 600;
-}
-.social {
-    display: flex;
-}
-.social a {
-    padding: .5rem;
-}
-.social img {
-    width: 20px; 
-    height: auto;  
-}
 /* Hero */
 .hero {
     position: relative;
@@ -154,37 +116,6 @@ footer section {
     background-color: #011e79;
     color: var(--primary-color);
 }
-/* Dark mode Btn */
-#darkBtn {
-    top: 1.5rem;
-    right: 1.5rem;
-    width: 40px;
-    height: auto; 
-    cursor: pointer;
-    border: none;
-    position: absolute;
-}
-.dark-mode .navigation a, 
-.dark-mode #menu,
-.dark-mode footer,
-.dark-mode #copyright,
-.dark-mode .links a  {
-    color: var(--primary-color);
-}
-.dark-mode,
-.dark-mode .navigation a:hover, 
-.dark-mode .navigation .active, 
-.dark-mode .navigation, 
-.dark-mode header,
-.dark-mode footer {
-    background-color: var(--accent2-color);
-}
-.upcoming-events,
-.company-spotlights {
-    padding: 20px;
-    background-color: var(--accent1-color);
-}
-
 .card-container {
     display: flex;
     flex-direction: column;
@@ -260,7 +191,6 @@ footer section {
     padding: 1.5rem;
     text-align: center;
 }
-
 .weather-card {
     display: flex;
     flex-direction: column;
@@ -272,7 +202,6 @@ footer section {
     width: 120px;
     height: auto;
 }
-
 .weather-details p {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
@@ -282,10 +211,77 @@ footer section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1.1rem;
 }
-
 .weather-details p:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+}
+/* Footer */
+footer {
+    text-align: left;
+    color: var(--accent2-color);
+    padding: 1rem;
+}
+footer section {
+    padding: .5rem;
+}
+.links {
+    list-style: none;
+}
+.links a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+.links li {
+    margin-bottom: .5rem;
+}
+.links a:hover {
+    text-decoration: underline;
+}
+#copyright {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    color: var(--accent2-color);
+    font-weight: 600;
+}
+.social {
+    display: flex;
+}
+.social a {
+    padding: .5rem;
+}
+.social img {
+    width: 20px; 
+    height: auto;  
+}
+/* Dark mode Btn */
+#darkBtn {
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 40px;
+    height: auto; 
+    cursor: pointer;
+    border: none;
+    position: absolute;
+}
+.dark-mode .navigation a, 
+.dark-mode #menu,
+.dark-mode footer,
+.dark-mode #copyright,
+.dark-mode .links a  {
+    color: var(--primary-color);
+}
+.dark-mode,
+.dark-mode .navigation a:hover, 
+.dark-mode .navigation .active, 
+.dark-mode .navigation, 
+.dark-mode header,
+.dark-mode footer {
+    background-color: var(--accent2-color);
+}
+.upcoming-events,
+.company-spotlights {
+    padding: 20px;
+    background-color: var(--accent1-color);
 }
