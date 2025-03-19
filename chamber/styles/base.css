@@ -42,9 +42,6 @@ header img {
     text-decoration: none;
     color: var(--secondary-color);
 }
-.navigation a:hover, .navigation .active {
-    background-color: rgba(255, 255, 255, 0.8);
-}
 /* hamburger menu button */
 #menu {
     font-size: 3rem;
@@ -101,24 +98,6 @@ header img {
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
-/*
-.hero-btn {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.hero-btn:hover {
-    background-color: #011e79;
-    color: var(--primary-color);
-    transform: scale(1.05);
-}
-*/
 .read-more-btn {
     display: inline-block;
     padding: 0.6rem 1.5rem;
