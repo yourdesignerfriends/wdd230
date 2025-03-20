@@ -32,10 +32,6 @@
     .navigation li {
         width: 100%;
     }
-    /* Main Hero */
-    .hero {
-        height: 70vh;
-    }
     /* Main Card */
     .card-container {
         flex-direction: row;
