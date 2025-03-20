@@ -189,9 +189,7 @@ iframe {
     border: none;
     padding: .5rem;
 }
-
 #reset-counter:hover {
     background-color: var(--primary-color);
     transform: scale(1.05);
 }
-
