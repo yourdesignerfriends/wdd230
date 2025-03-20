@@ -117,6 +117,10 @@ header img {
     padding: 20px;
     background-color: var(--primary-color);
 }
+.links a:hover, .navigation a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
 .event-card p {
     font-size: 1rem;
     color: var(--accent2-color);
@@ -203,9 +207,6 @@ footer section {
 }
 .links li {
     margin-bottom: .5rem;
-}
-.links a:hover {
-    text-decoration: underline;
 }
 #copyright {
     margin-top: 1.5rem;
