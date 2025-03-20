@@ -104,7 +104,7 @@ header span {
 .main-title h1 {
     color: var(--secondary-color);
 }
-.card {
+.card, .map-container, #reset-counter {
     box-shadow: 0 0 6px var(--secondary-color);
     border-radius: 8px;
     margin: 0.5rem;
@@ -176,3 +176,22 @@ footer {
     font-style: italic;
     font-weight: 500;
 }
+iframe {
+    width: 100%;
+    height: auto;
+}
+#reset-counter {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: .5rem;
+}
+
+#reset-counter:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
