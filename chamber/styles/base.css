@@ -1,7 +1,7 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #a00d17;
-    --accent1-color: #ebeff6;
+    --accent1-color: 1, 30, 121;
     --accent2-color: #011e79;
 }
 * {
@@ -71,15 +71,22 @@ header img {
 	height: 100%;
 	object-fit: cover;
 }
-.hero-content {
+.hero-label {
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--primary-color); 
+    width: 100%;
+    transform: translate(-50%, -10%);
+    padding: 1rem;
+    background-color: rgba(var(--accent1-color), 0.8);
     text-align: center;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+}
+.hero-label h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: var(--primary-color);
 }
 /* Event */
 .read-more-btn {
@@ -89,7 +96,6 @@ header img {
     color: var(--primary-color);
     text-decoration: none;
     font-size: 1rem;
-    font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
