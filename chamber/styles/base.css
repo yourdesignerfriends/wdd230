@@ -73,16 +73,15 @@ header img {
 }
 .hero-label {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -10%);
-    background-color: rgba(255, 255, 255, 0.4);
+    top: 5%;
+    left: 5%;
+    transform: translate(-5%, -5%);
+    background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 1rem;
 }
 .hero-label h1 {
     font-size: 1.5rem;
@@ -91,15 +90,12 @@ header img {
     color: var(--accent2-color);
     text-align: left;
     letter-spacing: 2px;
-    margin-left: 2rem;
+    margin: 0;
 }
 h1::first-letter {
     font-size: 3rem;
     font-weight: bold;
     color: var(--secondary-color);
-}
-.hero-label .read-more-btn {
-    margin-left: 2rem;
 }
 /* Event */
 .read-more-btn {
@@ -110,7 +106,7 @@ h1::first-letter {
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .read-more-btn:hover {
