@@ -82,6 +82,7 @@ header img {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 1rem;
+    box-shadow: 0 0 .5rem var(--accent2-color);
 }
 .hero-label h1 {
     font-size: 1.5rem;
