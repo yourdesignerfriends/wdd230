@@ -118,12 +118,19 @@ h1::first-letter {
     transform: scale(1.05);
     color: var(--primary-color); 
 }
+.discover-main-h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    font-style: italic;
+    font-weight: 600; 
+}
 /* Main Global Styles */
 .upcoming-events h2,
 .weather h2,
 .company-spotlights h2,
-.sidebar h2,
-.discover-pictures h2 {
+.sidebar h3,
+.discover-pictures h3 {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -166,9 +173,6 @@ h1::first-letter {
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.discover-pictures img:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 10); 
 }
 .fade-in {
     opacity: 0;
