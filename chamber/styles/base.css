@@ -25,6 +25,9 @@ header img {
     width: 60px; 
     height: auto; 
 }
+p {
+    color: var(--accent2-color);
+}
 /* Navigation */
 .navigation {
     margin-left: 1rem;
@@ -131,7 +134,8 @@ h1::first-letter {
     margin-bottom: 1.5rem; 
 }
 .upcoming-events,
-.company-spotlights {
+.company-spotlights,
+.discover-grid {
     padding: 20px;
     background-color: var(--primary-color);
 }
