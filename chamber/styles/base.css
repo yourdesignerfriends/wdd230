@@ -188,6 +188,10 @@ figcaption {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+.sidebar h3 + p {
+    font-weight: bold;
+    text-decoration: underline;
+}
 /* Weather */
 .weather-card {
     display: flex;
