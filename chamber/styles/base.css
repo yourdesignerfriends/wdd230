@@ -118,7 +118,7 @@ h1::first-letter {
     transform: scale(1.05);
     color: var(--primary-color); 
 }
-.discover-main-h2 {
+.discover-msg {
     text-align: left;
     font-size: 1.8rem;
     color: var(--secondary-color);
@@ -299,7 +299,7 @@ footer section {
 .dark-mode #copyright,
 .dark-mode .links a,
 .dark-mode .hero-label h1,
-.dark-mode .discover-main-h2 {
+.dark-mode .discover-msg {
     color: var(--primary-color);
 }
 .dark-mode,

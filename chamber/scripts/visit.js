@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const msToDays = 84600000;
-    const mainHeader = document.querySelector(".discover-main-h2");
+    const mainHeader = document.querySelector(".discover-msg");
     const lastVisit = localStorage.getItem("lastVisit");
     const currentDate = new Date();
 
