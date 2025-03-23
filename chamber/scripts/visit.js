@@ -1,29 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const msToDays = 1000 * 60 * 60 * 24;
+    const msToDays = 84600000;
     const mainHeader = document.querySelector(".discover-main-h2");
     const lastVisit = localStorage.getItem("lastVisit");
-    const currentDate = Date.now();
+    const currentDate = new Date();
 
-    function calculateDaysDifference(lastVisit) {
-        return Math.floor((currentDate - lastVisit) / msToDays);
+    function calculateDaysDifference(previousVisit) {
+        const timeDifference = currentDate.getTime() - previousVisit.getTime();
+        return timeDifference / msToDays;
     }
 
     function getMessage(daysDifference) {
-        if (daysDifference === 0) {
+        if (daysDifference > 0 && daysDifference < 1) {
             return "Back so soon! Awesome!";
-        } else if (daysDifference === 1) {
-            return `You last visited ${daysDifference} day ago.`;
+        } else if (Math.floor(daysDifference) === 1) {
+            return "You last visited 1 day ago.";
+        } else if (daysDifference >= 1) {
+            return `You last visited ${Math.floor(daysDifference)} days ago.`;
         } else {
-            return `You last visited ${daysDifference} days ago.`;
+            return "Welcome! Let us know if you have any questions.";
         }
     }
 
-    if (!lastVisit || isNaN(Date.parse(lastVisit))) {
-        mainHeader.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-        const daysDifference = calculateDaysDifference(parseInt(lastVisit, 10));
+    if (lastVisit) {
+        const previousVisit = new Date(lastVisit);
+        const daysDifference = calculateDaysDifference(previousVisit);
         mainHeader.textContent = getMessage(daysDifference);
+    } else {
+        mainHeader.textContent = "Welcome! Let us know if you have any questions.";
     }
 
-    localStorage.setItem("lastVisit", currentDate.toString());
+    localStorage.setItem("lastVisit", currentDate);
 });
