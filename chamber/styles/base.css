@@ -1,7 +1,6 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #a00d17;
-    --accent1-color: 1, 30, 121;
     --accent2-color: #011e79;
 }
 * {
@@ -12,6 +11,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin: auto;
+    color: var(--accent2-color);
 }
 /* Header */
 header {
@@ -224,6 +224,7 @@ figcaption {
     margin-bottom: 0.5rem;
     padding-left: 1rem;
     position: relative;
+    color: var(--accent2-color);
 }
 .sidebar li::before {
     content: ">";
