@@ -43,3 +43,17 @@ th, td {
     text-align: center;
     padding: 10px;
 }
+td:has(✔️) {
+    color: var(--check-color);
+}
+td:has(❌) {
+    color: var(--cross-color);
+}
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
