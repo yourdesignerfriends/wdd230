@@ -1,33 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const msToDays = 84600000;
-    const mainHeader = document.querySelector(".discover-msg");
-    const lastVisit = localStorage.getItem("lastVisit");
+let visitsDisplay = document.querySelector(".visits");
+
+let lastVisit = localStorage.getItem("last-check");
+
+if (!lastVisit) {
+    visitsDisplay.textContent = "Welcome! Let us know if you have any questions.";
+} else {
     const currentDate = new Date();
+    const previousVisitDate = new Date(lastVisit);
+    const timeDifference = currentDate - previousVisitDate;
+    const oneDay = 24 * 60 * 60 * 1000;
 
-    function calculateDaysDifference(previousVisit) {
-        const timeDifference = currentDate.getTime() - previousVisit.getTime();
-        return timeDifference / msToDays;
-    }
-
-    function getMessage(daysDifference) {
-        if (daysDifference > 0 && daysDifference < 1) {
-            return "Back so soon! Awesome!";
-        } else if (Math.floor(daysDifference) === 1) {
-            return "You last visited 1 day ago.";
-        } else if (daysDifference >= 1) {
-            return `You last visited ${Math.floor(daysDifference)} days ago.`;
-        } else {
-            return "Welcome! Let us know if you have any questions.";
-        }
-    }
-
-    if (lastVisit) {
-        const previousVisit = new Date(lastVisit);
-        const daysDifference = calculateDaysDifference(previousVisit);
-        mainHeader.textContent = getMessage(daysDifference);
+    if (timeDifference < oneDay) {
+        visitsDisplay.textContent = "Back so soon! Awesome!";
     } else {
-        mainHeader.textContent = "Welcome! Let us know if you have any questions.";
+        const daysBetweenVisits = Math.floor(timeDifference / oneDay);
+        const dayText = daysBetweenVisits === 1 ? "day" : "days";
+        visitsDisplay.textContent = "You last checked in " + daysBetweenVisits + " " + dayText + " ago.";
     }
+}
 
-    localStorage.setItem("lastVisit", currentDate);
-});
+localStorage.setItem("last-check", new Date().toString());
