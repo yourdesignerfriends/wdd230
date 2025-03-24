@@ -1,0 +1,13 @@
+:root {
+    --back: rgba(34, 139, 34, 1);
+    --back2: rgba(34, 139, 34, 0.5);
+    --forelight: #fff;
+    --border: hsla(34, 30%, 20%, 0.8);
+    --zebra: hsl(60, 70%, 90%);
+    --check-color: #228B22;
+    --cross-color: #8B0000;
+}
+body {
+    font-family: "Roboto", sans-serif;
+     
+}
