@@ -11,12 +11,11 @@ if (!lastVisit) {
     const timeDifference = currentTime - previousVisitTime;
     const oneDay = 24 * 60 * 60 * 1000;
 
-    const daysBetweenVisits = Math.floor(timeDifference / oneDay);
-    const dayText = daysBetweenVisits === 1 ? "day" : "days";
-
     if (timeDifference < oneDay) {
         visitsDisplay.textContent = "Back so soon! Awesome!";
     } else {
+        const daysBetweenVisits = Math.floor(timeDifference / oneDay);
+        const dayText = daysBetweenVisits === 1 ? "day" : "days";
         visitsDisplay.textContent = "You last checked in " + daysBetweenVisits + " " + dayText + " ago.";
     }
 }
