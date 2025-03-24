@@ -9,5 +9,37 @@
 }
 body {
     font-family: "Roboto", sans-serif;
-     
+    background-color: var(--forelight); 
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: var(--check-color);
+    text-transform: uppercase;
+}
+table {
+    margin: 20px auto;
+    border: 1px solid var(--border);
+    border-collapse: collapse;
+    width: 80%;
+    box-shadow: 0 0 10px gray;
+}
+caption {
+    caption-side: bottom;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: var(--back);
+    font-weight: 600;
+}
+th {
+    color: var(--back2);
+    font-size: large;
+    background-color: var(--forelight);
+}
+th, td {
+    border: 2px solid var(--border);
+    text-align: center;
+    padding: 10px;
 }
