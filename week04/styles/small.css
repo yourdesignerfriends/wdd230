@@ -49,6 +49,26 @@ main {
     min-height: 20rem;
 }
 
+/*----------- FORM STYLING --------------*/
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
 
 /*----------- FOOTER --------------*/
 footer {
