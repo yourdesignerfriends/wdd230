@@ -1,59 +1,64 @@
 :root {
-    --back: rgba(34, 139, 34, 1);
-    --back2: rgba(34, 139, 34, 0.5);
-    --forelight: #fff;
-    --border: hsla(34, 30%, 20%, 0.8);
-    --zebra: hsl(60, 70%, 90%);
-    --check-color: #228B22;
-    --cross-color: #8B0000;
+    --background: #1b263b;
+    --background2: #415a77;
+    --text-light: #ffffff;
+    --text-dark: #1b263b;
+    --border: #1b263b;
+    --zebra: #e0e1dd;
+}
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 body {
     font-family: "Roboto", sans-serif;
-    background-color: var(--forelight); 
-    color: black;
-    margin: 0;
-    padding: 0;
+    max-width: 960px;
 }
 h1 {
     text-align: center;
-    color: var(--check-color);
-    text-transform: uppercase;
+    color: var(--text-dark);
+    font-style: italic;
+    font-size: 1.5rem;
+    margin: 2rem;
 }
 table {
-    margin: 20px auto;
-    border: 1px solid var(--border);
     border-collapse: collapse;
-    width: 80%;
     box-shadow: 0 0 10px gray;
+    border: 1px solid var(--border);
 }
 caption {
     caption-side: bottom;
-    font-size: 1.2rem;
+    font-size: .9rem;
     padding: 1rem;
-    color: var(--back);
+    color: var(--text-dark);
     font-weight: 600;
 }
-th {
-    color: var(--back2);
-    font-size: large;
-    background-color: var(--forelight);
+tr:first-child th {
+    font-size: x-large;
+    color: var(--text-light);
+    background-color: var(--background);
+    padding: 1rem;
 }
-th, td {
-    border: 2px solid var(--border);
+tr:nth-child(2) th:first-child {
+    background-color: var(--background);
+}
+th {
+    color: var(--text-light);
+    font-size:x-large;
+    background-color: var(--background2);
+    padding: 1rem;
+    border: 1px solid var(--border);
+}
+td {
+    border: 1px solid var(--border);
     text-align: center;
     padding: 10px;
 }
-td:has(✔️) {
-    color: var(--check-color);
-}
-td:has(❌) {
-    color: var(--cross-color);
+td:first-child {
+    font-weight: bold;
+    font-size: larger;
+    color: var(--text-dark);
 }
 tbody tr:nth-child(even) {
     background-color: var(--zebra);
 }
-td:first-child {
-    text-align: left;
-    font-weight: bold;
-}
-
