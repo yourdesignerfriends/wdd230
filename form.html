@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analina Del Vecchio - WDD 230 - W04 Team Activity Form</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Analina Del Vecchio - W04 Team Activity Form">
+    <meta name="author" content="Analina Del Vecchio">
+
+    <meta property="og:title" content="Analina Del Vecchio - WDD 230 - W04 Team Activity Form">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development - Analina Del Vecchio - W04 Team Activity Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourdesignerfriends.github.io/wdd230/images/olympia-washington.webp">
+    <meta property="og:url" content="https://yourdesignerfriends.github.io/wdd230/index.html">
+    <meta property="fb:app_id" content="471826709228983">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="profile" src="images/profile.webp" alt="Analina Del Vecchio" width="368" height="540">
+        <span>Analina Del Vecchio</span>
+        <img src="images/dark-mode.svg" alt="dark mode" id="darkBtn">
+    </header>
+    <button type="button" id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" title="Home" class="active"> Home</a></li>
+            <li><a href="chamber/index.html" title="Chamber"> Chamber</a></li>
+            <li><a href="#" title="Site Plan"> Site Plan</a></li>
+            <li><a href="#" title="Form"> Form</a></li>
+        </ul> 
+    </nav>
+    <main>
+        <div class="main-title">
+            <h1>WDD 230 - W04 Team Activity Form</h1>
+        </div>
+        <div id="formmessage" role="alert"></div>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>Team Activity Form</legend>
+                <label>Username* <input type="text" id="name" name="name" required></label>
+
+                <label>Password* <input type="password" id="password" name="password" 
+                    required pattern="[A-Za-z0-9]{8,}" 
+                    placeholder="At least eight (8) characters long (only alpha-numeric)">
+                </label>
+
+                <label>Re-enter Password* <input type="password" id="re-password" name="re-password" required></label>
+
+                <label>Email* <input type="email" id="email" name="email" 
+                    required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" 
+                    placeholder="user@byui.edu" title="Please enter a valid email address"
+                    required>
+                </label>
+
+                <label for="pageRating">Page Rating (1-10)</label>
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="5">
+                <span id="ratingValue">5</span>  
+
+                <button type="submit">Submit Team Activity</button>              
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburgerMenu.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+</body>
+</html>
