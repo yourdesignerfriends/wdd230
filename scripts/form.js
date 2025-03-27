@@ -1,4 +1,4 @@
-const form = document.querySelector(".wf1");
+const form = document.querySelector(".form-s");
 const kp1 = document.querySelector("#password");
 const kp2 = document.querySelector("#re-password");
 const emailInput = document.getElementById("email");
