@@ -191,35 +191,35 @@ iframe {
     transform: scale(1.05);
 }
 /* Table */
-.wf1 fieldset {
+.form-s fieldset {
     margin: 2rem 0;
     border: 1px solid var(--secondary-color);
     border-radius: 6px;
     padding: .5rem 2%;
 }
 
-.wf1 legend {
+.form-s legend {
     color: var(--secondary-color);
     padding: 0 .5rem;
 }
 
-.wf1 label {
+.form-s label {
     display: block;
     padding-top: 1rem;
     color: var(--primary-color);
     font-size: .9rem;
 }
 
-.wf1 div {
+.form-s div {
     padding-top: 1rem;
     color: var(--secondary-color);
     font-size: .9rem;
 }
 
-.wf1 input[type="text"],
-.wf1 input[type="password"],
-.wf1 input[type="email"],
-.wf1 input[type="range"]
+.form-s input[type="text"],
+.form-s input[type="password"],
+.form-s input[type="email"],
+.form-s input[type="range"]
 {
     background-color: var(--accent-color);
     display: block;
@@ -232,7 +232,7 @@ iframe {
     appearance: none;
 }
 
-.wf1 input[type="submit"]{
+.form-s input[type="submit"]{
     border: none;
     background-color: var(--primary-color);
     border-radius: 6px;
@@ -243,10 +243,10 @@ iframe {
     box-shadow: 1px 1px 4px var(--accent-color);
     color: var(--accent-color);
 }
-.wf1 input:required {
+.form-s input:required {
     border-bottom: solid 8px var(--primary-color);
 }
-.wf1 input:required:valid {
+.form-s input:required:valid {
     border-bottom: solid 8px var(--secondary-color);
 }
 .hidden {
