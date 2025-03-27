@@ -277,13 +277,13 @@ iframe {
     max-width: 400px;
     height: 10px;
 }
-#rangevalues {
+#ratingValues {
     display: flex;
     margin: 0 0 0 25px;
     width: 200px;
 }
 
-#rangevalues option {
+#ratingValues option {
     flex: 1 1 auto;
     text-align: center;
     font-size: 0.9rem;
