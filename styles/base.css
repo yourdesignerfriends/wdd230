@@ -4,7 +4,7 @@
     --accent-color: #ffffff;
     --accent-color-1: #000000;
 }
-/* Global Styles */
+/* GLOBAL STYLES */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     font-weight: 400;
     margin: auto;
 }
-/* Header */
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ header span {
     margin-left: 1rem;
     font-size: 1.8rem;
 }
-/* Header Navigation */
+/* HEADER NAV */
 .navigation {
     background-color: var(--primary-color);
 }
@@ -55,7 +55,7 @@ header span {
 .navigation a:hover, nav .active {
     background-color: rgba(0, 0, 0, 0.2);
 }
-/* hamburger menu button */
+/* HAMBURGUER MENU BUTTON */
 #menu {
     font-size: 2rem;
     top: 4rem;
@@ -77,7 +77,7 @@ header span {
 .open a {
     display: block;
 }
-/* Dark mode Btn */
+/* DARK MODE BTN */
 #darkBtn {
     top: 3rem;
     right: 1.6rem;
@@ -95,7 +95,7 @@ header span {
 .dark-mode .card a {
     color: var(--accent-color);
 }
-/* Main */
+/* MAIN H1 */
 .main-title {
     margin: 5px;
     font-size: 0.7rem;
@@ -104,6 +104,7 @@ header span {
 .main-title h1 {
     color: var(--secondary-color);
 }
+/* INDEX PAGE CARD */
 .card, .map-container, #reset-counter {
     box-shadow: 0 0 6px var(--secondary-color);
     border-radius: 8px;
@@ -140,13 +141,7 @@ header span {
     background-color: rgba(0, 0, 0, 0.2);
     text-decoration: underline;
 }
-/* Footer */
-footer {
-    padding: 5px;
-    background-color: var(--secondary-color);
-    color: var(--accent-color);
-    text-align: center;
-}
+/* INDEX PAGE HERO */
 .hero {
     position: relative;
 }
@@ -173,10 +168,12 @@ footer {
     font-style: italic;
     font-weight: 500;
 }
+/* INDEX PAGE GOOGLE MAP */
 iframe {
     width: 100%;
     height: auto;
 }
+/* INDEX PAGE VISIT COUNTER */
 #reset-counter {
     background-color: var(--secondary-color);
     color: var(--accent-color);
@@ -190,7 +187,7 @@ iframe {
     background-color: var(--primary-color);
     transform: scale(1.05);
 }
-/* Table */
+/* FORM */
 .form-container {
     margin: 1rem;
     box-shadow: 0 0 6px var(--secondary-color);
@@ -204,20 +201,18 @@ iframe {
     color: var(--secondary-color);
     padding: 0 .5rem;
 }
-
 .form-s label {
     display: block;
     padding-top: 1rem;
     color: var(--primary-color);
     font-size: .9rem;
 }
-
 .form-s div {
     padding-top: 1rem;
     color: var(--secondary-color);
     font-size: .9rem;
 }
-
+/* TEXT, PASSWORD AND EMAIL INPUT */
 .form-s input[type="text"],
 .form-s input[type="password"],
 .form-s input[type="email"]
@@ -232,19 +227,60 @@ iframe {
     max-width: 400px;
     appearance: none;
 }
-
-.form-s input[type="submit"]{
-    border: none;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    padding: .75rem;
+/* RANGE INPUT */
+#ratingValue {
+    font-weight: bold;
+    font-size: larger;
+}
+.form-s input[type="range"] {
+    display: block;
+    padding: 0;
     width: 100%;
     max-width: 400px;
-    box-shadow: 1px 1px 4px var(--accent-color-1);
-    color: var(--accent-color);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    height: 10px;
+    margin: 0;
+    margin-top: .6rem;
+    background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
 }
+.form-s input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--primary-color);
+    height: 15px;
+    border-radius: 5px;
+}
+.form-s input[type="range"]::-moz-range-track {
+    background: var(--primary-color);
+    height: 15px;
+    border-radius: 5px;
+}
+.form-s input[type="range"]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    height: 15px;
+}
+.form-s input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+#ratingValues {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+#ratingValues span {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+/* ERROR MSG REQUIERED AND VALID */
 .form-s input:required {
     border-bottom: solid 8px var(--primary-color);
 }
@@ -266,26 +302,27 @@ iframe {
     background-color: var(--accent-color);
     color: var(--secondary-color);
 }
-#ratingValue {
-    font-weight: bold;
-    font-size: larger;
-}
-.form-s input[type="range"] {
-    display: block;
+/* SUBMIT INPUT */
+.form-s input[type="submit"]{
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 6px;
     padding: .75rem;
     width: 100%;
     max-width: 400px;
-    height: 10px;
+    box-shadow: 1px 1px 4px var(--accent-color-1);
+    color: var(--accent-color);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
-#ratingValues {
-    display: flex;
-    margin: 0 0 0 25px;
-    width: 200px;
+.form-s input[type="submit"]:hover {
+    background-color: var(--secondary-color);
 }
-
-#ratingValues option {
-    flex: 1 1 auto;
+/* FOOTER */
+footer {
+    padding: 5px;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
     text-align: center;
-    font-size: 0.9rem;
-    color: #555;
 }
