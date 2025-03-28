@@ -16,22 +16,26 @@ if (form && kp1 && kp2 && emailInput && message && rangeInput && ratingValue) {
     console.error("Some elements of the form were not found in the DOM");
 }
 
-function handlePasswordMismatch() {
-    message.textContent = "Passwords DO NOT MATCH!";
+function handleError(field, errorMessage) {
+    message.textContent = errorMessage;
     message.classList.remove("hidden");
     message.classList.add("visible");
-    kp2.classList.add("error-background");
-    kp2.value = "";
+    field.classList.add("error-background");
+    field.value = "";
+}
+
+function clearError(field) {
+    message.classList.remove("visible");
+    message.classList.add("hidden");
+    field.classList.remove("error-background");
+    field.classList.add("default-background");
 }
 
 function checkSame() {
     if (kp1.value !== kp2.value) {
-        handlePasswordMismatch();
+        handleError(kp2, "Passwords DO NOT MATCH!");
     } else {
-        message.classList.remove("visible");
-        message.classList.add("hidden");
-        kp2.classList.remove("error-background");
-        kp2.classList.add("default-background");
+        clearError(kp2);
     }
 }
 
@@ -39,13 +43,12 @@ function validateEmail() {
     const emailValue = emailInput.value;
     const emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
     if (!emailPattern.test(emailValue)) {
-        message.textContent = "Please enter a valid email address (must be from the byui.edu domain).";
-        message.classList.remove("hidden");
-        message.classList.add("visible");
-        emailInput.classList.add("error-background");
+        handleError(emailInput, "Please enter a valid email address (must be from the byui.edu domain)");
         return false;
+    } else {
+        clearError(emailInput);
+        return true;
     }
-    return true;
 }
 
 function validateForm(event) {
@@ -57,7 +60,7 @@ function validateForm(event) {
     }
 
     if (kp1.value !== kp2.value) {
-        handlePasswordMismatch();
+        handleError(kp2, "Passwords DO NOT MATCH!");
         isValid = false;
     }
 
