@@ -319,6 +319,17 @@ iframe {
 .form-s input[type="submit"]:hover {
     background-color: var(--secondary-color);
 }
+/* RECORD PAGE STYLE */
+.record-msg {
+    text-align: center;
+}
+.record-msg img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    margin: 1rem;
+}
 /* FOOTER */
 footer {
     padding: 5px;
