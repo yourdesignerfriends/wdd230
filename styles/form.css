@@ -201,25 +201,18 @@ header span {
 }
 /* ERROR MSG REQUIERED AND VALID */
 .form-s input:required {
-    border-bottom: solid 8px var(--primary-color);
+    border-bottom: solid 8px red;
 }
 .form-s input:required:valid {
-    border-bottom: solid 8px var(--secondary-color);
+    border-bottom: solid 8px green;
 }
 .hidden {
     visibility: hidden;
 }
 .visible {
     visibility: visible;
-    color: var(--primary-color);
+    color: red;
     font-weight: bold;
-}
-.error-background {
-    background-color: var(--accent-color);
-}
-.default-background {
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
 }
 /* SUBMIT INPUT */
 .form-s input[type="submit"]{
