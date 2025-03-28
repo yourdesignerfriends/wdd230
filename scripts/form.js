@@ -22,7 +22,6 @@ function handlePasswordMismatch() {
     message.classList.add("visible");
     kp2.classList.add("error-background");
     kp2.value = "";
-    kp2.focus();
 }
 
 function checkSame() {
