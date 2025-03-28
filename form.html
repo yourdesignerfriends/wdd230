@@ -52,7 +52,8 @@
                     type="text" 
                     id="name" 
                     name="name" 
-                    required>
+                    required
+                    title="Choose a unique username with letters, numbers, or underscores">
                 </label>
                 <label>Password* 
                     <input 
@@ -61,7 +62,8 @@
                     name="password" 
                     required
                     pattern="[A-Za-z0-9]{8,}" 
-                    placeholder="At least eight (8) characters long (only alpha-numeric)">
+                    placeholder="At least eight (8) characters long (only alpha-numeric)"
+                    title="Use at least 8 alphanumeric characters">
                 </label>
                 <label>Re-enter Password* 
                     <input 
@@ -91,7 +93,8 @@
                     max="10" 
                     step="1" 
                     value="5" 
-                    list="ratingValues"> 
+                    list="ratingValues"
+                    title="Select a page rating from 1 to 10."> 
                     <datalist id="ratingValues">
                         <option value="1"></option>
                         <option value="2"></option>
