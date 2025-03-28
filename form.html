@@ -48,30 +48,48 @@
             <h2>Student Registration</h2>
             <form method="get" action="record.html" class="form-s">
                 <label>Username* <input type="text" id="name" name="name" required></label>
-                <label>Password* <input type="password" id="password" name="password" 
-                    required pattern="[A-Za-z0-9]{8,}" 
+                <label>Password* 
+                    <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required
+                    pattern="[A-Za-z0-9]{8,}" 
                     placeholder="At least eight (8) characters long (only alpha-numeric)">
                 </label>
                 <label>Re-enter Password* <input type="password" id="re-password" name="re-password" required></label>
-                <label>Email* <input type="email" id="email" name="email" 
-                    required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" 
-                    placeholder="user@byui.edu" title="Please enter a valid email address"
+                <label>Email*
+                    <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" 
+                    placeholder="user@byui.edu" 
+                    title="Please enter a valid email address"
                     required>
                 </label>
                 <label for="pageRating">Page Rating 1-10 (Optional)  <span id="ratingValue">5</span></label>
-                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="5" list="ratingValues" required> 
-                <div id="ratingValues">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
+                    <input 
+                    type="range" 
+                    id="pageRating" 
+                    name="pageRating" 
+                    min="1" 
+                    max="10" 
+                    step="1" 
+                    value="5" 
+                    list="ratingValues"> 
+                    <div id="ratingValues">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
                 <input type="submit" value="Submit Your Registration">   
             </form>
         </div>
