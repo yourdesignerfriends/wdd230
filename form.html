@@ -47,22 +47,37 @@
             <div id="formmessage" role="alert"></div>
             <h2>Student Registration</h2>
             <form method="get" action="record.html" class="form-s">
-                <label>Username* <input type="text" id="name" name="name" required></label>
+                <label>Username* 
+                    <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    autocomplete="name" 
+                    required>
+                </label>
                 <label>Password* 
                     <input 
                     type="password" 
                     id="password" 
                     name="password" 
+                    autocomplete="new-password"
                     required
                     pattern="[A-Za-z0-9]{8,}" 
                     placeholder="At least eight (8) characters long (only alpha-numeric)">
                 </label>
-                <label>Re-enter Password* <input type="password" id="re-password" name="re-password" required></label>
+                <label>Re-enter Password* 
+                    <input 
+                    type="password" 
+                    id="re-password" 
+                    name="re-password" 
+                    required>
+                </label>
                 <label>Email*
                     <input 
                     type="email" 
                     id="email" 
                     name="email" 
+                    autocomplete="email"
                     pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" 
                     placeholder="user@byui.edu" 
                     title="Please enter a valid email address"
