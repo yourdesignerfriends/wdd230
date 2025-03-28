@@ -206,6 +206,9 @@ header span {
 .form-s input:required:valid {
     border-bottom: solid 8px green;
 }
+.form-s input:required:invalid {
+    border-bottom: solid 8px red;
+}
 .hidden {
     visibility: hidden;
 }
