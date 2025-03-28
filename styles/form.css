@@ -192,6 +192,7 @@ header span {
     max-width: 400px;
 }
 #ratingValues span {
+    margin-top: .5rem;
     text-align: center;
     font-size: 0.9rem;
     font-weight: 500;
