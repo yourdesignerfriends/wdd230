@@ -13,7 +13,7 @@ if (form && kp1 && kp2 && emailInput && message && rangeInput && ratingValue) {
         ratingValue.textContent = rangeInput.value;
     });
 } else {
-    console.error("Algunos elementos del formulario no se encontraron en el DOM.");
+    console.error("Some elements of the form were not found in the DOM");
 }
 
 function handlePasswordMismatch() {
@@ -42,6 +42,7 @@ function validateEmail() {
         message.textContent = "Please enter a valid email address (must be from the byui.edu domain).";
         message.classList.remove("hidden");
         message.classList.add("visible");
+        emailInput.classList.add("error-background");
         return false;
     }
     return true;
