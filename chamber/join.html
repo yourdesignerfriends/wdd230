@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Olympia Chamber of Commerce</title>
+    <meta name="description" content="Become a member of the Olympia Chamber of Commerce and connect with local businesses, grow your network, and contribute to the thriving Olympia business community">
+    <meta name="author" content="Analina Del Vecchio">
+
+    <meta property="og:title" content="Join the Olympia Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Olympia Chamber of Commerce and connect with local businesses, grow your network, and contribute to the thriving Olympia business community.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourdesignerfriends.github.io/wdd230/chamber/images/olympia-washington.webp">
+    <meta property="og:url" content="https://yourdesignerfriends.github.io/wdd230/chamber/index.html">
+    <meta property="fb:app_id" content="471826709228983">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-div">
+        <header>
+            <img src="images/logo-3.webp" alt="Logo" width="100" height="84">
+        </header>
+        <button type="button" id="menu"></button>
+        <img src="images/dark.svg" alt="dark mode" id="darkBtn">
+        <nav class="navigation">    
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="discover.html" title="Discover">Discover</a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li> 
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/join-large.webp" media="(min-width: 1200px)" class="hero-image">
+                <source srcset="images/join-medium.webp" media="(min-width: 800px)" class="hero-image">
+                <img src="images/join-small.webp" alt="Olympia Washington" width="400" height="300" class="hero-image">
+            </picture>
+            <div class="hero-label">
+                <h1>Join the Olympia<br>Chamber of Commerce</h1>
+            </div>
+        </div>
+        <div class="form-container">
+            <div id="formmessage" role="alert"></div>
+            <h2>Membership Application Form</h2>
+            <form method="get" action="thankyou.html" class="form-s">
+                <fieldset>
+                    <legend>Tell Us About Yourself</legend>
+                    <label>First name* 
+                        <input 
+                        type="text" 
+                        id="fname" 
+                        name="fname" 
+                        required>
+                    </label>
+                    <label>Last name* 
+                        <input 
+                        type="text" 
+                        id="lname" 
+                        name="lname" 
+                        required>
+                    </label>
+                    <label>Title or position*
+                        <input 
+                        type="text"
+                        id="title" 
+                        name="title"
+                        pattern="[a-zA-Z\s\-]{7,}"
+                        placeholder="e.g., Marketing Manager"
+                        title="Only alphabetic characters, hyphens, and spaces are allowed. Minimum of 7 characters."
+                        required>
+                    </label>
+                    <label>Email*
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="e.g., yourname@example.com"
+                        title="Please enter a valid email address"
+                        required>
+                    </label>
+                    <label>Mobile Phone Number*
+                        <input
+                        type="tel" 
+                        name="phone" 
+                        id="phone" 
+                        placeholder="e.g., +1 333-444-5555" 
+                        required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business/Organization's Name*
+                        <input
+                        type="text" 
+                        name="bname" 
+                        id="bname" 
+                        placeholder="e.g., Olympia Tech Solutions" 
+                        required>
+                    </label>
+                    <label>Business/Organization's Description</label>
+                    <textarea 
+                        name="business-description" 
+                        id="business-description" 
+                        placeholder="Describe your business or organization here..." 
+                        rows="5" 
+                        cols="50">
+                    </textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Options</legend>
+                    <label>Membership Level 
+                        <select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="non-profit">NP Membership is for non profit organizations and there is no fee</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                        </select>
+                    </label> 
+                </fieldset>
+                <input 
+                    type="hidden" 
+                    name="form-timestamp" 
+                    id="form-timestamp">
+                <input type="submit" value="Confirm Your Membership">  
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <section>
+                    <h4>Stay Connected</h4>
+                    <div class="social">
+                        <a href="#" aria-label="facebook">
+                            <img src="images/facebook.svg" alt="Facebook" width="800" height="800">
+                        </a>
+                        <a href="#" aria-label="youtube">
+                            <img src="images/youtube.svg" alt="youtube" width="800" height="800">
+                        </a>
+                        <a href="#" aria-label="instagram">
+                            <img src="images/instagram.svg" alt="instagram" width="800" height="800">
+                        </a>
+                        <a href="#" aria-label="linkedin">
+                            <img src="images/linkedin.svg" alt="linkedin" width="800" height="800">
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>Quick Links</h4>
+                    <nav>    
+                        <ul class="links">
+                            <li><a href="#" title="Home">Home</a></li>
+                            <li><a href="#" title="Discover">Discover</a></li>
+                            <li><a href="#" title="Directory">Directory</a></li>
+                            <li><a href="#" title="Join">Join</a></li> 
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>Contact Us</h4>
+                    <p>555 Main Street <br> Olympia Washington, USA</p>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>About This Project</h4>
+                    <p>BYU Idaho<br>WDD 230 <br>Created by: Analina Del Vecchio<br><span id="lastModified"></span></p>
+                </section>
+            </div>
+        </div>
+        <p id="copyright"></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburgerMenu.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</body>
+</html>
