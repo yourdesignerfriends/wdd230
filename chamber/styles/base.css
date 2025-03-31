@@ -453,6 +453,7 @@ tr:nth-child(2) th {
     background-color: var(--accent2-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    text-align: center;
 }
 tbody tr:nth-child(even) {
     background-color: #dadbde;
