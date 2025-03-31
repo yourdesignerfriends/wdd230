@@ -132,7 +132,8 @@ h1::first-letter {
 .company-spotlights h2,
 .sidebar h3,
 .discover-pictures h3,
-.form-container h2 {
+.form-container h2,
+th[colspan="5"] {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -144,9 +145,13 @@ h1::first-letter {
 }
 .upcoming-events,
 .company-spotlights,
-.discover-grid {
+.discover-grid,
+.join-grid {
     padding: 20px;
     background-color: var(--primary-color);
+    display: block;
+    padding: 1rem;
+    gap: 1rem;
 }
 .links a:hover, .navigation a:hover {
     text-decoration: underline;
@@ -229,11 +234,6 @@ figcaption {
     transition: all 0.3s ease-in-out;
 }
 /* Discover Main */
-.discover-grid {
-    display: block;
-    padding: 1rem;
-    gap: 1rem;
-}
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -325,7 +325,7 @@ footer section {
 /* FORM */
 .form-container {
     margin: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     padding: 1rem;
     background-color: var(--accent-color);
@@ -396,7 +396,7 @@ form textarea {
     font-weight: 500;
     color: var(--primary-color);
     background-color: var(--accent2-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 1.1rem;
 }
 /* RECORD PAGE STYLE */
@@ -407,7 +407,7 @@ form textarea {
     max-width: 40%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     margin: 1rem;
 }
 fieldset {
@@ -422,5 +422,38 @@ fieldset {
     color: var(--secondary-color);
     padding: 0 10px;
 }
-
-  
+/* TABLE */
+table {
+    border-collapse: collapse;
+}
+caption {
+    caption-side: bottom;
+    font-size: .9rem;
+    padding: 1rem;
+    color: var(--accent2-color);
+    font-weight: 600;
+}
+th {
+    color: var(--secondary-color);
+    padding: 1rem;
+    font-size: larger;
+}
+td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+}
+table td:first-child {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    color: var(--accent2-color);
+}
+tr:nth-child(2) th {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+tbody tr:nth-child(even) {
+    background-color: #dadbde;
+}

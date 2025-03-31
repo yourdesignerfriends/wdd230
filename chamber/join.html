@@ -51,90 +51,146 @@
                 <h1>Join the Olympia<br>Chamber of Commerce</h1>
             </div>
         </div>
-        <div class="form-container">
-            <div id="formmessage" role="alert"></div>
-            <h2>Membership Application Form</h2>
-            <form method="get" action="thankyou.html" class="form-s">
-                <fieldset>
-                    <legend>Tell Us About Yourself</legend>
-                    <label>First name* 
-                        <input 
-                        type="text" 
-                        id="fname" 
-                        name="fname" 
-                        required>
-                    </label>
-                    <label>Last name* 
-                        <input 
-                        type="text" 
-                        id="lname" 
-                        name="lname" 
-                        required>
-                    </label>
-                    <label>Title or position*
-                        <input 
-                        type="text"
-                        id="title" 
-                        name="title"
-                        pattern="[a-zA-Z\s\-]{7,}"
-                        placeholder="e.g., Marketing Manager"
-                        title="Only alphabetic characters, hyphens, and spaces are allowed. Minimum of 7 characters."
-                        required>
-                    </label>
-                    <label>Email*
-                        <input 
-                        type="email" 
-                        id="email" 
-                        name="email" 
-                        placeholder="e.g., yourname@example.com"
-                        title="Please enter a valid email address"
-                        required>
-                    </label>
-                    <label>Mobile Phone Number*
-                        <input
-                        type="tel" 
-                        name="phone" 
-                        id="phone" 
-                        placeholder="e.g., +1 333-444-5555" 
-                        required>
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <legend>Business Information</legend>
-                    <label>Business/Organization's Name*
-                        <input
-                        type="text" 
-                        name="bname" 
-                        id="bname" 
-                        placeholder="e.g., Olympia Tech Solutions" 
-                        required>
-                    </label>
-                    <label>Business/Organization's Description</label>
-                    <textarea 
-                    name="business-description" 
-                    id="business-description" 
-                    placeholder="Describe your business or organization here..." 
-                    rows="5" 
-                    cols="50"></textarea>
-                </fieldset>
-                <fieldset>
-                    <legend>Membership</legend>
-                    <label>Membership Level Options 
-                        <select name="subject">
-                        <option value="">Select Your Level &#9662;</option>
-                        <option value="non-profit">NP Membership is for non profit organizations and there is no fee</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                        </select>
-                    </label> 
-                </fieldset>
-                <input 
-                    type="hidden" 
-                    name="form-timestamp" 
-                    id="form-timestamp">
-                <input type="submit" value="Confirm Your Membership">  
-            </form>
+        <div class="join-grid">
+            <div class="form-container">
+                <div id="formmessage" role="alert"></div>
+                <h2>Membership Application Form</h2>
+                <form method="get" action="thankyou.html" class="form-s">
+                    <fieldset>
+                        <legend>Tell Us About Yourself</legend>
+                        <label>First name* 
+                            <input 
+                            type="text" 
+                            id="fname" 
+                            name="fname" 
+                            required>
+                        </label>
+                        <label>Last name* 
+                            <input 
+                            type="text" 
+                            id="lname" 
+                            name="lname" 
+                            required>
+                        </label>
+                        <label>Title or position*
+                            <input 
+                            type="text"
+                            id="title" 
+                            name="title"
+                            pattern="[a-zA-Z\s\-]{7,}"
+                            placeholder="e.g., Marketing Manager"
+                            title="Only alphabetic characters, hyphens, and spaces are allowed. Minimum of 7 characters."
+                            required>
+                        </label>
+                        <label>Email*
+                            <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="e.g., yourname@example.com"
+                            title="Please enter a valid email address"
+                            required>
+                        </label>
+                        <label>Mobile Phone Number*
+                            <input
+                            type="tel" 
+                            name="phone" 
+                            id="phone" 
+                            placeholder="e.g., +1 333-444-5555" 
+                            required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label>Business/Organization's Name*
+                            <input
+                            type="text" 
+                            name="bname" 
+                            id="bname" 
+                            placeholder="e.g., Olympia Tech Solutions" 
+                            required>
+                        </label>
+                        <label>Business/Organization's Description</label>
+                        <textarea 
+                        name="business-description" 
+                        id="business-description" 
+                        placeholder="Describe your business or organization here..." 
+                        rows="5" 
+                        cols="50"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Membership</legend>
+                        <label>Membership Level Options 
+                            <select name="subject">
+                            <option value="">Select Your Level &#9662;</option>
+                            <option value="non-profit">NP Membership is for non profit organizations and there is no fee</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                            </select>
+                        </label> 
+                    </fieldset>
+                    <input 
+                        type="hidden" 
+                        name="form-timestamp" 
+                        id="form-timestamp">
+                    <input type="submit" value="Confirm Your Membership">  
+                </form>
+            </div>
+            <aside class="sidebar">
+                <table>
+                    <caption>Membership Benefits by Level - Updated 2025</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="5">Benefits by Membership Level</th>
+                        </tr>
+                        <tr>
+                            <th>Features</th>
+                            <th>Non Profit</th>
+                            <th>Bronze</th>
+                            <th>Silver</th>
+                            <th>Gold</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Business Mentorship</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Business Promotions</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Digital Collaboration Platform</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Exclusive Networking Events</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Training & Workshops</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
         </div>
     </main>
     <footer>
@@ -189,6 +245,7 @@
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/hamburgerMenu.js" defer></script>
     <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/weather.js" defer></script>
 </body>
 </html>
