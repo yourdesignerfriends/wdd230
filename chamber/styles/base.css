@@ -487,3 +487,10 @@ th[colspan="5"] {
     font-size: 1.2rem;
     font-style: italic;
 }
+.join-flex {
+    padding: 20px;
+    background-color: var(--primary-color);
+    display: block;
+    padding: 1rem;
+    gap: 1rem;
+}
