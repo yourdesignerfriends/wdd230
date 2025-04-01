@@ -488,9 +488,8 @@ th[colspan="5"] {
     font-style: italic;
 }
 .join-flex {
-    padding: 20px;
+    padding: .5rem;
     background-color: var(--primary-color);
     display: block;
-    padding: 1rem;
-    gap: 1rem;
+    gap: .5rem;
 }
