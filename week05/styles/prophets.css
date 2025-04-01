@@ -30,7 +30,7 @@ main {
 }
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: .2rem;
 }
 section {
@@ -39,9 +39,12 @@ section {
     text-align: center;
     padding: 2rem;
 }
-h2 {
-    font-size: 1.2rem;
+.card h2 {
+    font-size: 1rem;
     text-align: center;
+}
+.card p {
+    font-size: .7rem;
 }
 img {
     max-width: 100%;
