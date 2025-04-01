@@ -132,11 +132,9 @@ h1::first-letter {
 .company-spotlights h2,
 .sidebar h3,
 .discover-pictures h3,
-.form-container h2,
-th[colspan="5"] {
+.form-container h2 {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 20px;
     color: var(--accent2-color);
     font-weight: bold; 
     text-transform: uppercase; 
@@ -329,6 +327,7 @@ footer section {
     border-radius: 6px;
     padding: 1rem;
     background-color: var(--accent-color);
+    max-width: 450px;
 }
 .form-s label {
     display: block;
@@ -424,25 +423,25 @@ table {
 }
 caption {
     caption-side: bottom;
-    font-size: .9rem;
-    padding: 1rem;
+    font-size: .8rem;
+    padding: .5rem;
     color: var(--accent2-color);
     font-weight: 600;
 }
 th {
     color: var(--secondary-color);
-    padding: 1rem;
-    font-size: larger;
+    padding: .7rem;
+    font-size: 1rem;
 }
 td {
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
     border: 1px solid var(--primary-color);
 }
 table td:first-child {
     text-align: left;
     font-weight: bold;
-    font-size: large;
+    font-size: 1rem;
     color: var(--accent2-color);
 }
 tr:nth-child(2) th {
@@ -453,6 +452,22 @@ tr:nth-child(2) th {
 }
 tbody tr:nth-child(even) {
     background-color: #dadbde;
+}
+th[colspan="5"] {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--accent2-color);
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
+    margin-bottom: .5rem; 
+}
+.table-sidebar {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    text-align: left;
+    max-width: 420px;
 }
 /* QUOTE */
 .quote-section {
