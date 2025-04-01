@@ -53,7 +53,6 @@
         </div>
         <div class="join-grid">
             <div class="form-container">
-                <div id="formmessage" role="alert"></div>
                 <h2>Membership Application Form</h2>
                 <form method="get" action="thankyou.html" class="form-s">
                     <fieldset>
@@ -63,6 +62,7 @@
                             type="text" 
                             id="fname" 
                             name="fname" 
+                            title="Enter your first name, e.g., Carl"
                             required>
                         </label>
                         <label>Last name* 
@@ -70,6 +70,7 @@
                             type="text" 
                             id="lname" 
                             name="lname" 
+                            title="Enter your last name, e.g., Anna"
                             required>
                         </label>
                         <label>Title or position*
@@ -97,6 +98,7 @@
                             name="phone" 
                             id="phone" 
                             placeholder="e.g., +1 333-444-5555" 
+                            title="Enter Your Phone Number"
                             required>
                         </label>
                     </fieldset>
@@ -108,20 +110,22 @@
                             name="bname" 
                             id="bname" 
                             placeholder="e.g., Olympia Tech Solutions" 
+                            title="Enter the Name of Your Business or Organization"
                             required>
                         </label>
                         <label>Business/Organization's Description</label>
                         <textarea 
                         name="business-description" 
                         id="business-description" 
-                        placeholder="Describe your business or organization here..." 
+                        placeholder="Describe your business or organization here..."
+                        title="Describe your business or organization" 
                         rows="5" 
                         cols="50"></textarea>
                     </fieldset>
                     <fieldset>
                         <legend>Membership</legend>
                         <label>Membership Level Options 
-                            <select name="subject">
+                            <select name="subject" title="Choose Your Membership Level">
                             <option value="">Select Your Level &#9662;</option>
                             <option value="non-profit">NP Membership is for non profit organizations and there is no fee</option>
                             <option value="bronze">Bronze Membership</option>
@@ -135,6 +139,7 @@
                         name="form-timestamp" 
                         id="form-timestamp">
                     <input type="submit" value="Confirm Your Membership">  
+                    <div id="formmessage" role="alert"></div>
                 </form>
             </div>
             <aside class="sidebar">

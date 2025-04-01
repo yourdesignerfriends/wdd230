@@ -358,31 +358,27 @@ form textarea {
     appearance: none;
 }
 /* ERROR MSG REQUIERED AND VALID */
-.form-s input:required,
-.form-s textarea:required {
+.form-s input:required {
     border-left: solid 8px red;
 }
-.form-s input:required:valid,
-.form-s textarea:valid {
+.form-s input:required:valid {
     border-left: solid 8px green;
 }
 .form-s input:required:invalid,
 .form-s textarea:invalid {
     border-left: solid 8px red;
 }
-.error-background {
-    border-left: solid 8px red;
-}
-.default-background {
-    border-left: solid 8px green;
-}
-.hidden {
-    visibility: hidden;
-}
-.visible {
-    visibility: visible;
+#formmessage {
     color: red;
     font-weight: bold;
+    display: none;
+}
+#formmessage.visible {
+    display: block;
+}
+.error-background {
+    border: 2px solid red;
+    background-color: var(--primary-color);
 }
 /* SUBMIT INPUT */
 .form-s input[type="submit"]{
