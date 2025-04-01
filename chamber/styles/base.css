@@ -132,7 +132,8 @@ h1::first-letter {
 .company-spotlights h2,
 .sidebar h3,
 .discover-pictures h3,
-.form-container h2 {
+.form-container h2,
+.thankyou h2 {
     text-align: center;
     font-size: 1.4rem;
     color: var(--accent2-color);
@@ -492,4 +493,18 @@ th[colspan="5"] {
     background-color: var(--primary-color);
     display: block;
     gap: .5rem;
+}
+.thankyou {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.thankyou img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    margin: 1rem;
 }
