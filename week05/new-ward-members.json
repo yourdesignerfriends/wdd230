@@ -1,0 +1,28 @@
+{
+    "familyName": "Nielsen",
+    "moveInDate": "2024-01-01",
+    "numberOfFamilyMembers": 3,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Alien Rey Nielsen",
+            "gender": "Male",
+            "birthdate": "1998-04-25"
+        },
+        {
+            "name": "Cookie Nielsen",
+            "gender": "Female",
+            "birthdate": "2001-09-04"
+        },
+        {
+            "name":"Lilimon Nielsen",
+            "gender": "Female",
+            "birthdate": "2003-07-24"
+        },
+        {
+            "name": "Cushi Nielsen",
+            "gender": "Male",
+            "birthdate": "2020-04-15"
+        }
+    ]
+}
