@@ -13,7 +13,7 @@ body {
     margin: auto;
     color: var(--accent2-color);
 }
-/* Header */
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@ header img {
 p {
     color: var(--accent2-color);
 }
-/* Navigation */
+/* NAVEGATION */
 .navigation {
     margin-left: 1rem;
 }
@@ -45,7 +45,7 @@ p {
     text-decoration: none;
     color: var(--secondary-color);
 }
-/* hamburger menu button */
+/* HAMBURGUER MENU */
 #menu {
     font-size: 3rem;
     color: var(--secondary-color);
@@ -65,7 +65,7 @@ p {
 .open a {
     display: block;
 }
-/* Main Hero */
+/* MAIN HERO */
 .hero {
     position: relative;
 }
@@ -101,7 +101,7 @@ h1::first-letter {
     font-weight: bold;
     color: var(--secondary-color);
 }
-/* Event */
+/* EVENT */
 .read-more-btn {
     display: inline-block;
     padding: 0.6rem 1.5rem;
@@ -126,7 +126,7 @@ h1::first-letter {
     font-weight: 600; 
     margin-left: 1rem;
 }
-/* Main Global Styles */
+/* GLOBAL STYLES */
 .upcoming-events h2,
 .weather h2,
 .company-spotlights h2,
@@ -159,7 +159,7 @@ h1::first-letter {
     font-size: 1rem;
     color: var(--accent2-color);
 }
-/* Main Card */
+/* MAIN CARD */
 .card-container {
     display: flex;
     flex-direction: column;
@@ -196,7 +196,7 @@ figcaption {
     font-weight: bold;
     text-decoration: underline;
 }
-/* Weather */
+/* WEATHER */
 .weather-card {
     display: flex;
     flex-direction: column;
@@ -231,7 +231,7 @@ figcaption {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
-/* Discover Main */
+/* DISCOVERY MAIN */
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -252,7 +252,7 @@ figure {
     margin: 0 auto 1rem;
     text-align: center;
 }
-/* Footer */
+/* FOOTER */
 footer {
     text-align: left;
     color: var(--accent2-color);
@@ -287,7 +287,7 @@ footer section {
     width: 20px; 
     height: auto;  
 }
-/* Dark mode Btn */
+/* DARK MODE BTN */
 #darkBtn {
     top: 1.5rem;
     right: 1.5rem;
