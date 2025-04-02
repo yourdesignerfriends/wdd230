@@ -13,7 +13,7 @@ async function getLinks() {
 }
 
 function displayLinks(weeks) {
-    const linksContainer = document.querySelector(".card ul");
+    const linksContainer = document.querySelector(".learning-card ul");
     linksContainer.innerHTML = "";
 
     weeks.forEach(week => {

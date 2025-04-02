@@ -105,13 +105,17 @@ header span {
     color: var(--secondary-color);
 }
 /* INDEX PAGE CARD */
-.card, .map-container, #reset-counter {
+.learning-card,
+.weather-card, 
+.map-container, 
+#reset-counter {
     box-shadow: 0 0 6px var(--secondary-color);
     border-radius: 8px;
     margin: 0.5rem;
     padding: 1rem;
 }
-.card h2 {
+.learning-card h2,
+.weather-card h2 {
     border-radius: 8px 8px 0 0;
     margin: -1rem -1rem 1rem -1rem;
     font-size: 1.3rem;
@@ -120,31 +124,36 @@ header span {
     padding: 0.5rem;
     text-align: center;
 }
-.card p {
+.learning-card p,
+.weather-card p {
     text-align: center;
 }
-.card ul {
+.learning-card ul,
+.weather-card ul {
     list-style-type: none; 
     padding-left: 0; 
 }
-.card ul li {
+.learning-card ul li,
+.weather-card ul li {
     margin-bottom: 0.5rem;
 }
-.card a {
+.learning-card a,
+.weather-card a {
     padding: .3rem;
     color: var(--accent-color-1);
     text-decoration: none;
     transition: background-color 0.7s ease, color 0.7s ease;
     font-style: italic;
 }
-.card a:hover {
+.learning-card a:hover,
+.weather-card a:hover {
     background-color: rgba(0, 0, 0, 0.2);
     text-decoration: underline;
 }
-.card:nth-of-type(2) {
+.weather-card {
     text-align: center;
 }
-.card figcaption {
+.weather-card figcaption {
     text-transform: capitalize;
 }
 /* INDEX PAGE HERO */
