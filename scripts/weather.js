@@ -21,12 +21,15 @@ async function apiFetch() {
 apiFetch();
 
 function displayWeather(data) {
+    const section = document.createElement('section');
+    const infoTitle = document.createElement('h2');
     const title = document.createElement('h3');
     const temperature = document.createElement('p');
     const figure = document.createElement('figure');
     const icon = document.createElement('img');
     const figCaption = document.createElement('figcaption');
 
+    infoTitle.textContent = 'Information';
     title.textContent = `Weather in ${data.name}`;
     temperature.innerHTML = `The current temperature is: ${data.main.temp}&deg;F`;
     icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
@@ -37,9 +40,12 @@ function displayWeather(data) {
 
     figure.appendChild(icon);
     figure.appendChild(figCaption);
-    weatherCard.appendChild(title);
-    weatherCard.appendChild(temperature);
-    weatherCard.appendChild(figure);
+    section.appendChild(infoTitle);
+    section.appendChild(title);
+    section.appendChild(temperature);
+    section.appendChild(figure);
+    weatherCard.appendChild(section);
+
     setupVisitCounter();
 }
 
@@ -92,6 +98,9 @@ async function getLinks() {
 
 function displayLinks(weeks) {
     const linksContainer = document.querySelector(".learning-card");
+    const section = document.createElement("section");
+    const heading = document.createElement("h2");
+    heading.textContent = "Learning Activities";
     const list = document.createElement("ul");
 
     weeks.forEach(week => {
@@ -115,7 +124,9 @@ function displayLinks(weeks) {
         list.appendChild(listItem);
     });
 
-    linksContainer.appendChild(list);
+    section.appendChild(heading);
+    section.appendChild(list);
+    linksContainer.appendChild(section);
 }
 
 getLinks();
