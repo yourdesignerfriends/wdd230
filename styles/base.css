@@ -141,6 +141,12 @@ header span {
     background-color: rgba(0, 0, 0, 0.2);
     text-decoration: underline;
 }
+.card:nth-of-type(2) {
+    text-align: center;
+}
+.card figcaption {
+    text-transform: capitalize;
+}
 /* INDEX PAGE HERO */
 .hero {
     position: relative;
