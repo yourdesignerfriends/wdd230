@@ -23,7 +23,7 @@ const displayMembers = (members) => {
     companyName.textContent = member.name;
     address.textContent = `Address: ${member.address}`;
     phone.textContent = `Phone: ${member.phone}`;
-    website.textContent = `Visit Website`;
+    website.textContent = member.website;
     website.href = member.website;
     website.target = '_blank';
     logo.setAttribute('src', member.image);
@@ -34,11 +34,11 @@ const displayMembers = (members) => {
     membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
     description.textContent = `Description: ${member.description}`;
 
+    card.appendChild(logo);
     card.appendChild(companyName);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
-    card.appendChild(logo);
     card.appendChild(membershipLevel);
     card.appendChild(description);
 

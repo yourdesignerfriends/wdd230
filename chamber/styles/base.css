@@ -508,3 +508,34 @@ th[colspan="5"] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 1rem;
 }
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .2rem;
+}
+#cards section {
+    background-color: var(--primary-color);
+    overflow: hidden;
+    text-align: center;
+    padding: 2rem;
+}
+#cards h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+#cards p {
+    font-size: .7rem;
+}
+#cards img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+#cards a {
+    color: var(--secondary-color);
+    font-size: small;
+}
+.directory-container {
+    background-color: var(--accent2-color);
+    padding: .5rem;
+}
