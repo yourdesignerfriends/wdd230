@@ -28,6 +28,8 @@ function displayResults(data) {
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('width', '100');
+    weatherIcon.setAttribute('height', '100');
 
     captionDesc.textContent = desc;
 }
