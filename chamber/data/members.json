@@ -76,8 +76,8 @@
             "name": "Experience Olympia & Beyond",
             "address": "1919 Harrison Ave NW, Olympia, WA 98502",
             "phone": "(360) 943-1850",
-            "website": "images/olympiaandbe.webp",
-            "image": "images/experience_olympia.png",
+            "website": "https://www.experienceolympia.com",
+            "image": "images/olympiaandbe.webp",
             "membershipLevel": "Platinum",
             "description": "Promoting tourism and local experiences in the Olympia region."
         },
@@ -86,7 +86,7 @@
             "address": "705 4th Ave E, Olympia, WA 98506",
             "phone": "(360) 352-3864",
             "website": "https://www.courtyardantiquesolympia.com",
-            "image": "images/couyard.webp",
+            "image": "images/courtyard.webp",
             "membershipLevel": "Silver",
             "description": "Offering unique antiques, home decor, and seasonal items."
         }
