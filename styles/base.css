@@ -52,7 +52,7 @@ header span {
     text-align: center;
     color: var(--accent-color);
 }
-.navigation a:hover, nav .active {
+.navigation a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 /* HAMBURGUER MENU BUTTON */
