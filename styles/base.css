@@ -92,7 +92,8 @@ header span {
     color: var(--accent-color);
 }
 .dark-mode .main-title h1, 
-.dark-mode .card a {
+.dark-mode .learning-card a,
+.dark-mode .learning-card a {
     color: var(--accent-color);
 }
 /* MAIN H1 */
@@ -123,29 +124,24 @@ header span {
     padding: 0.5rem;
     text-align: center;
 }
-.learning-card p,
 .weather-card p {
     text-align: center;
 }
-.learning-card ul,
-.weather-card ul {
+.learning-card ul {
     list-style-type: none; 
     padding-left: 0; 
 }
-.learning-card ul li,
-.weather-card ul li {
+.learning-card ul li {
     margin-bottom: 0.5rem;
 }
-.learning-card a,
-.weather-card a {
+.learning-card a {
     padding: .3rem;
     color: var(--accent-color-1);
     text-decoration: none;
     transition: background-color 0.7s ease, color 0.7s ease;
     font-style: italic;
 }
-.learning-card a:hover,
-.weather-card a:hover {
+.learning-card a:hover {
     background-color: rgba(0, 0, 0, 0.2);
     text-decoration: underline;
 }
