@@ -1,5 +1,7 @@
 const url = "https://yourdesignerfriends.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector('#cards');
+const membersContainer = document.querySelector("#members");
+const gridBtn = document.querySelector("#gridBtn");
+const listBtn = document.querySelector("#listBtn");
 
 async function getMemberData() {
   const response = await fetch(url);
@@ -10,29 +12,30 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {
+  membersContainer.innerHTML = "";
   members.forEach((member) => {
-    let card = document.createElement('section');
-    let companyName = document.createElement('h3');
-    let address = document.createElement('p');
-    let phone = document.createElement('p');
-    let website = document.createElement('a');
-    let logo = document.createElement('img');
-    let membershipLevel = document.createElement('p');
-    let description = document.createElement('p');
+    let card = document.createElement("section");
+    let companyName = document.createElement("h2");
+    let address = document.createElement("p");
+    let phone = document.createElement("p");
+    let website = document.createElement("a");
+    let logo = document.createElement("img");
+    let membershipLevel = document.createElement("p");
+    let description = document.createElement("p");
 
     companyName.textContent = member.name;
-    address.textContent = `Address: ${member.address}`;
-    phone.textContent = `Phone: ${member.phone}`;
+    address.textContent = `${member.address}`;
+    phone.textContent = `${member.phone}`;
     website.textContent = member.website;
     website.href = member.website;
-    website.target = '_blank';
-    logo.setAttribute('src', member.image);
-    logo.setAttribute('alt', `Logo of ${member.name}`);
-    logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', '150');
-    logo.setAttribute('height', '150');
-    membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
-    description.textContent = `Description: ${member.description}`;
+    website.target = "_blank";
+    logo.setAttribute("src", member.image);
+    logo.setAttribute("alt", `Logo of ${member.name}`);
+    logo.setAttribute("loading", "lazy");
+    logo.setAttribute("width", "150");
+    logo.setAttribute("height", "150");
+    membershipLevel.textContent = `${member.membershipLevel}`;
+    description.textContent = `${member.description}`;
 
     card.appendChild(logo);
     card.appendChild(companyName);
@@ -42,6 +45,16 @@ const displayMembers = (members) => {
     card.appendChild(membershipLevel);
     card.appendChild(description);
 
-    cards.appendChild(card);
+    membersContainer.appendChild(card);
   });
 };
+
+gridBtn.addEventListener("click", () => {
+  membersContainer.classList.remove("list");
+  membersContainer.classList.add("grid");
+});
+
+listBtn.addEventListener("click", () => {
+  membersContainer.classList.remove("grid");
+  membersContainer.classList.add("list");
+});
