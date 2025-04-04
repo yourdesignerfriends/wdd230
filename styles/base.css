@@ -107,7 +107,6 @@ header span {
 /* INDEX PAGE CARD */
 .learning-card,
 .weather-card, 
-.map-container, 
 #reset-counter {
     box-shadow: 0 0 6px var(--secondary-color);
     border-radius: 8px;
@@ -184,10 +183,6 @@ header span {
     font-weight: 500;
 }
 /* INDEX PAGE GOOGLE MAP */
-iframe {
-    width: 100%;
-    height: auto;
-}
 /* INDEX PAGE VISIT COUNTER */
 #reset-counter {
     background-color: var(--secondary-color);
