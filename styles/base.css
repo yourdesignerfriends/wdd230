@@ -183,6 +183,12 @@ header span {
     font-weight: 500;
 }
 /* INDEX PAGE GOOGLE MAP */
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border: none;
+}
 /* INDEX PAGE VISIT COUNTER */
 #reset-counter {
     background-color: var(--secondary-color);
