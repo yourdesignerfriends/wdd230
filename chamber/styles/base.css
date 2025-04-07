@@ -509,6 +509,7 @@ th[colspan="5"] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 1rem;
 }
+/* DIRECTORY GRID STYLE */
 .directory {
     background-color: var(--accent2-color);
     padding: 0.5rem;
@@ -540,7 +541,7 @@ th[colspan="5"] {
     color: var(--secondary-color);
     font-size: medium;
 }
-
+/* DIRECTORY LIST STYLE */
 #members.list section {
     display: flex;
     flex-direction: column;
@@ -564,7 +565,7 @@ th[colspan="5"] {
     background-color: #f0f0f0;
 }
 
-#members.list h2, 
+#members.list h3, 
 #members.list p, 
 #members.list a {
   display: table-cell;

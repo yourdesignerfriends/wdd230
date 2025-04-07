@@ -12,7 +12,7 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {
-  membersContainer.innerHTML = "";
+  //membersContainer.innerHTML = "";
   members.forEach((member) => {
     let card = document.createElement("section");
     let companyName = document.createElement("h2");
@@ -21,7 +21,6 @@ const displayMembers = (members) => {
     let website = document.createElement("a");
     let logo = document.createElement("img");
     let membershipLevel = document.createElement("p");
-    let description = document.createElement("p");
 
     companyName.textContent = member.name;
     address.textContent = `${member.address}`;
@@ -35,7 +34,6 @@ const displayMembers = (members) => {
     logo.setAttribute("width", "150");
     logo.setAttribute("height", "150");
     membershipLevel.textContent = `${member.membershipLevel}`;
-    description.textContent = `${member.description}`;
 
     card.appendChild(logo);
     card.appendChild(companyName);
@@ -43,7 +41,6 @@ const displayMembers = (members) => {
     card.appendChild(phone);
     card.appendChild(website);
     card.appendChild(membershipLevel);
-    card.appendChild(description);
 
     membersContainer.appendChild(card);
   });

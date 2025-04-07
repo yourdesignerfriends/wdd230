@@ -6,8 +6,7 @@
             "phone": "(360) 413-6901",
             "website": "https://www.dairyqueen.com/en-us/",
             "image": "images/dairy-queen.webp",
-            "membershipLevel": "Gold",
-            "description": "Dairy Queen is a chain known for ice cream and fast food"
+            "membershipLevel": "Gold"
         },
         {
             "name": "TAS Transform Action Strategy",
@@ -71,24 +70,6 @@
             "image": "images/uptown.webp",
             "membershipLevel": "Gold",
             "description": "A local favorite offering scratch-kitchen food and craft cocktails."
-        },
-        {
-            "name": "Experience Olympia & Beyond",
-            "address": "1919 Harrison Ave NW, Olympia, WA 98502",
-            "phone": "(360) 943-1850",
-            "website": "https://www.experienceolympia.com",
-            "image": "images/olympiaandbe.webp",
-            "membershipLevel": "Platinum",
-            "description": "Promoting tourism and local experiences in the Olympia region."
-        },
-        {
-            "name": "Courtyard Antiques & Home Decor",
-            "address": "705 4th Ave E, Olympia, WA 98506",
-            "phone": "(360) 352-3864",
-            "website": "https://www.courtyardantiquesolympia.com",
-            "image": "images/courtyard.webp",
-            "membershipLevel": "Silver",
-            "description": "Offering unique antiques, home decor, and seasonal items."
         }
     ]
 }
