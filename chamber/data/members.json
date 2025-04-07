@@ -1,13 +1,13 @@
 {
     "members": [
         {
-            "name": "OAC Services",
-            "address": "321 Cleveland Ave SE, Suite 209, Tumwater, WA 98501",
-            "phone": "(206) 285-4300",
-            "website": "https://oacsvcs.com",
-            "image": "images/oac.webp",
+            "name": "Dairy Queen",
+            "address": "611 Lilly Rd SE Olympia, WA 98501",
+            "phone": "(360) 413-6901",
+            "website": "https://www.dairyqueen.com/en-us/",
+            "image": "images/dairy-queen.webp",
             "membershipLevel": "Gold",
-            "description": "Consulting company offering project management and construction services."
+            "description": "Dairy Queen is a chain known for ice cream and fast food"
         },
         {
             "name": "TAS Transform Action Strategy",
