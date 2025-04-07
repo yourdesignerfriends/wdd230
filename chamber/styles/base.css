@@ -133,8 +133,7 @@ h1::first-letter {
 .sidebar h3,
 .discover-pictures h3,
 .form-container h2,
-.thankyou h2,
-.directory h2 {
+.thankyou h2 {
     text-align: center;
     font-size: 1.4rem;
     color: var(--accent2-color);
@@ -509,25 +508,54 @@ th[colspan="5"] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 1rem;
 }
-/* DIRECTORY GRID STYLE */
+/* DIRECTORY BTN */
 .directory {
     background-color: var(--accent2-color);
     padding: 0.5rem;
+    text-align: center;
 }
-#members section {
+.directory h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+.directory button {
+    color: var(--accent2-color);
+    border-radius: 8px;
+    padding: .5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+    font-weight: bold;
     background-color: var(--primary-color);
+    cursor: pointer;
+    border: none;
+    margin-bottom: 1rem;
+    width: 20%;
+}
+.directory button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+/* DIRECTORY GRID STYLE */
+#members.grid section {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+#members.grid {
     overflow: hidden;
     text-align: center;
-    padding: 2rem;
-}
-#members.grid section {
+    padding: 1rem;
+    gap: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
 }
 #members.grid h3 {
     font-size: 1rem;
-    text-align: center;
 }
 #members.grid p {
     font-size: .7rem;
@@ -535,50 +563,38 @@ th[colspan="5"] {
 #members.grid img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 #members.grid a {
     color: var(--secondary-color);
-    font-size: medium;
 }
 /* DIRECTORY LIST STYLE */
-#members.list section {
+#members.list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    width: 100%;
+    background-color: var(--primary-color);
 }
-#members.list {
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
+#members.list > section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
-
-#members.list section {
-  display: table-row;
+#members.list > section:nth-child(odd) {
+    background-color: var(--accent1-color);
 }
-
-#members.list section:nth-child(odd) {
-  background-color: var(--accent1-color);
-}
-
-#members.list section:nth-child(even) {
+#members.list > section:nth-child(even) {
     background-color: #f0f0f0;
 }
-
 #members.list h3, 
 #members.list p, 
 #members.list a {
-  display: table-cell;
-  padding: 0.5rem;
-  text-align: left;
-  vertical-align: middle;
+    flex: 1;
+    margin: 0 0.5rem;
+    text-align: left;
+    vertical-align: middle;
 }
-
 #members.list img {
-  display: none;
-}
-
-#members.list h2 {
-  font-size: 1rem;
-  font-weight: bold;
+    display: none;
 }
