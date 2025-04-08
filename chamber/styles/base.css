@@ -569,7 +569,7 @@ th[colspan="5"] {
     padding: 1rem;
     gap: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 #members.grid h2 {
     font-size: 1rem;
@@ -578,7 +578,7 @@ th[colspan="5"] {
     font-size: 1rem;
 }
 #members.grid img {
-    width: 285px; 
+    width: 100%; 
     height: auto;
 }
 #members.grid a {
