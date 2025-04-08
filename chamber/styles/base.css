@@ -570,8 +570,6 @@ th[colspan="5"] {
 }
 /* DIRECTORY LIST STYLE */
 #members.list {
-    display: flex;
-    flex-direction: column;
     background-color: var(--primary-color);
     margin: .5rem;
     border-radius: 8px;
