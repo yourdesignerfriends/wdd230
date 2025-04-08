@@ -1,11 +1,11 @@
 {
     "members": [
         {
-            "name": "Dairy Queen",
-            "address": "611 Lilly Rd SE Olympia, WA 98501",
-            "phone": "(360) 413-6901",
-            "website": "https://www.dairyqueen.com/en-us/",
-            "image": "images/dairy-queen.webp",
+            "name": "US Bank",
+            "address": "402 Capitol Way S Olympia, WA 98501",
+            "phone": "(360) 753-9800",
+            "website": "https://www.usbank.com/index.html",
+            "image": "images/usbank-logo.webp",
             "membershipLevel": "Gold"
         },
         {
