@@ -18,18 +18,18 @@
         },
         {
             "name": "Costco",
-            "address": "5500 Littlerock Rd SW, Tumwater, WA 98512",
+            "address": "5500 Littlerock Rd SW Tumwater, WA 98512",
             "phone": "(360) 357-6580",
             "website": "https://www.costco.com/",
             "image": "images/costco-logo.webp",
             "membershipLevel": "Bronze"
         },
         {
-            "name": "Heritage Bank",
-            "address": "201 5th Avenue SW, Olympia, WA 98501",
-            "phone": "(360) 943-1500",
-            "website": "https://www.heritagebanknw.com",
-            "image": "images/heritagebank.webp",
+            "name": "Cabelas",
+            "address": "1600 Gateway Blvd NE Lacey, WA 98516",
+            "phone": "(360) 252-3500",
+            "website": "https://www.cabelas.com/home",
+            "image": "images/cabelas-logo.webp",
             "membershipLevel": "Platinum"
         },
         {
