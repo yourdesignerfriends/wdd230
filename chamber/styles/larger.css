@@ -127,6 +127,8 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        gap: 1rem;
+
     }
     #members.list h2, 
     #members.list p, 
