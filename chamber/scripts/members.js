@@ -37,9 +37,9 @@ const displayMembers = (members) => {
 
     card.appendChild(logo);
     card.appendChild(companyName);
+    card.appendChild(website);
     card.appendChild(address);
     card.appendChild(phone);
-    card.appendChild(website);
     card.appendChild(membershipLevel);
 
     membersContainer.appendChild(card);
