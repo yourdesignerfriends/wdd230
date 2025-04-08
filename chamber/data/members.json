@@ -2,7 +2,7 @@
     "members": [
         {
             "name": "US Bank",
-            "address": "402 Capitol Way S Olympia, WA 98501",
+            "address": "402 Capitol Way S - Olympia, WA 98501",
             "phone": "(360) 753-9800",
             "website": "https://www.usbank.com/",
             "image": "images/usbank-logo.webp",
@@ -10,7 +10,7 @@
         },
         {
             "name": "Macys",
-            "address": "625 Black Lake Blvd Olympia, WA 98502",
+            "address": "625 Black Lake Blvd - Olympia, WA 98502",
             "phone": "(360) 534-7000",
             "website": "https://www.macys.com/",
             "image": "images/macys-logo.webp",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Costco",
-            "address": "5500 Littlerock Rd SW Tumwater, WA 98512",
+            "address": "5500 Littlerock Rd SW - Olympia, WA 98512",
             "phone": "(360) 357-6580",
             "website": "https://www.costco.com/",
             "image": "images/costco-logo.webp",
@@ -26,7 +26,7 @@
         },
         {
             "name": "Cabelas",
-            "address": "1600 Gateway Blvd NE Lacey, WA 98516",
+            "address": "1600 Gateway Blvd NE - Olympia, WA 98516",
             "phone": "(360) 252-3500",
             "website": "https://www.cabelas.com/",
             "image": "images/cabelas-logo.webp",
@@ -34,18 +34,18 @@
         },
         {
             "name": "Amazon",
-            "address": "3300 Hogum Bay Rd NE Lacey, WA 98516",
+            "address": "3300 Hogum Bay Rd NE - Olympia, WA 98516",
             "phone": "1-888-280-4331",
             "website": "https://www.amazon.com/",
             "image": "images/amazon-logo.webp",
             "membershipLevel": "Gold"
         },
         {
-            "name": "Puget Sound Healthcare",
-            "address": "4001 Capitol Mall Dr SW, Olympia, WA 98502",
+            "name": "Columbia",
+            "address": "4001 Capitol Mall Dr SW - Olympia, WA 98502",
             "phone": "(360) 754-9792",
-            "website": "http://www.pugetsoundskillednursing.com",
-            "image": "images/7.webp",
+            "website": "https://www.columbia.com/",
+            "image": "images/columbia-logo.webp",
             "membershipLevel": "Silver"
         },
         {
