@@ -571,7 +571,7 @@ th[colspan="5"] {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-#members.grid h3 {
+#members.grid h2 {
     font-size: 1rem;
 }
 #members.grid p {
@@ -601,7 +601,7 @@ th[colspan="5"] {
 #members.list > section:nth-child(even) {
     background-color: #f0f0f0;
 }
-#members.list h3, 
+#members.list h2, 
 #members.list p, 
 #members.list a {
     display: block;
