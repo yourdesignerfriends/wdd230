@@ -30,7 +30,7 @@ const displayMembers = (members) => {
     website.target = "_blank";
     logo.setAttribute("src", member.image);
     logo.setAttribute("alt", `Logo of ${member.name}`);
-    //logo.setAttribute("loading", "lazy");
+    logo.setAttribute("loading", "lazy");
     logo.setAttribute("width", "285");
     logo.setAttribute("height", "215");
     membershipLevel.textContent = `${member.membershipLevel}`;

@@ -578,7 +578,7 @@ th[colspan="5"] {
     font-size: 1rem;
 }
 #members.grid img {
-    max-width: 100%;
+    width: 285px; 
     height: auto;
 }
 #members.grid a {
