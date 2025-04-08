@@ -1,6 +1,7 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #a00d17;
+    --accent1-color: #dadbde;
     --accent2-color: #011e79;
 }
 * {
@@ -203,12 +204,27 @@ figcaption {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--primary-color);
 }
-.weather-img {
-    width: 120px;
+#weather img,
+#forecast img {
+    width: 80px;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--accent1-color);
 }
-.weather {
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     border-radius: 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     max-width: 400px;
@@ -217,18 +233,23 @@ figcaption {
     text-align: center;
     background-color: var(--primary-color);
 }
-.weather-details p {
-    color: var(--accent2-color);
-    border-radius: 12px;
-    padding: 0.8rem 1rem;
-    margin: 0.5rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem;
+#forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
-.weather-details p:hover,
-.form-s input[type="submit"]:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+#forecast section {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    background-color: #fff;
+    color: var(--accent2-color);
+}
+#forecast section:hover,
+#weather section:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
@@ -354,6 +375,12 @@ footer section {
     padding-top: 1rem;
     color: var(--secondary-color);
     font-size: .9rem;
+}
+.form-s input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 /* TEXT, PASSWORD AND EMAIL INPUT */
 .form-s input[type="text"],
