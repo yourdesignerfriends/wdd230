@@ -55,14 +55,6 @@
             "website": "https://pioneersupport.us",
             "image": "images/pioneer.webp",
             "membershipLevel": "Platinum"
-        },
-        {
-            "name": "Up Town Grill",
-            "address": "514 Capitol Way S, Olympia, WA 98501",
-            "phone": "(360) 338-0340",
-            "website": "https://www.uptowngrill514.com",
-            "image": "images/uptown.webp",
-            "membershipLevel": "Gold"
         }
     ]
 }
