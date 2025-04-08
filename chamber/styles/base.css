@@ -321,6 +321,20 @@ footer section {
 .dark-mode h1::first-letter {
     color: var(--primary-color);
 }
+.dark-mode #gridBtn:hover,
+.dark-mode #listBtn:hover,
+.dark-mode #gridBtn,
+.dark-mode #listBtn {
+    background-color: var(--primary-color);
+}
+.dark-mode #gridBtn,
+.dark-mode #listBtn {
+    color: var(--accent2-color);
+}
+.dark-mode #gridBtn:hover,
+.dark-mode #listBtn:hover {
+    color: var(--secondary-color);
+}
 /* FORM */
 .form-container {
     margin: .5rem;
@@ -509,7 +523,7 @@ th[colspan="5"] {
     margin: 1rem;
 }
 /* DIRECTORY BTN */
-.directory {
+/*.directory {
     padding: 0.5rem;
     text-align: center;
     background-color: var(--primary-color);
@@ -522,8 +536,9 @@ th[colspan="5"] {
     font-weight: bold; 
     text-transform: uppercase; 
     letter-spacing: 2px; 
-}
-.directory button {
+}*/
+#gridBtn,
+#listBtn {
     color: var(--primary-color);
     border-radius: 8px;
     padding: .5rem;
@@ -533,10 +548,11 @@ th[colspan="5"] {
     background-color: var(--accent2-color);
     cursor: pointer;
     border: none;
-    margin-bottom: 1rem;
+    margin: 1rem;
     width: 20%;
 }
-.directory button:hover {
+#gridBtn:hover,
+#listBtn:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
