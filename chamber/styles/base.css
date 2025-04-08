@@ -129,7 +129,7 @@ h1::first-letter {
 }
 /* GLOBAL STYLES */
 .upcoming-events h2,
-.weather h2,
+.weather-card h2,
 .company-spotlights h2,
 .sidebar h3,
 .discover-pictures h3,
@@ -144,6 +144,7 @@ h1::first-letter {
     margin-bottom: 1.5rem; 
 }
 .upcoming-events,
+.weather-card,
 .company-spotlights,
 .discover-grid,
 .join-grid {
@@ -199,19 +200,6 @@ figcaption {
     text-decoration: underline;
 }
 /* WEATHER */
-.weather-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    text-align: center;
-    background-color: var(--primary-color);
-}
 #weather img,
 #forecast img {
     width: 80px;
