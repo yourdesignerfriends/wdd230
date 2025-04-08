@@ -49,11 +49,11 @@
             "membershipLevel": "Silver"
         },
         {
-            "name": "Pioneer Tech Solutions",
-            "address": "5205 Corporate Center Ct SE, Ste C, Olympia, WA 98503",
-            "phone": "(929) 677-6155",
-            "website": "https://pioneersupport.us",
-            "image": "images/pioneer.webp",
+            "name": "Grocery Outlet",
+            "address": "2100 Harrison Ave NW - Olympia, WA 98502",
+            "phone": "(360) 570-9449",
+            "website": "https://www.groceryoutlet.com/",
+            "image": "images/grocery-logo.webp",
             "membershipLevel": "Platinum"
         }
     ]
