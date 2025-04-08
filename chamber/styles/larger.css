@@ -5,17 +5,11 @@
     h1 {
         text-align: center;
     }
-    /* Header */
-    .header-div {
-        display: flex;
-        align-items: center;
-        justify-content:left;
-    } 
-    /* Hamburguer Menu */
+    /* HAMBURGUER MENU */
     #menu {
         display: none;
     }
-    /* Navigation */
+    /* NAVIGATION */
     .navigation {
         flex-direction: row;
     }

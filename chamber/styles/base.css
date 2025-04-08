@@ -12,7 +12,6 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin: auto;
-    color: var(--accent2-color);
 }
 /* HEADER */
 header {
@@ -537,21 +536,6 @@ th[colspan="5"] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 1rem;
 }
-/* DIRECTORY BTN */
-/*.directory {
-    padding: 0.5rem;
-    text-align: center;
-    background-color: var(--primary-color);
-    border-radius: 8px;
-}
-.directory h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--accent2-color);
-    font-weight: bold; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-}*/
 #gridBtn,
 #listBtn {
     color: var(--primary-color);
