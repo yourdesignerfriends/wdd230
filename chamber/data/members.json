@@ -9,13 +9,12 @@
             "membershipLevel": "Gold"
         },
         {
-            "name": "TAS Transform Action Strategy",
-            "address": "Spokane, WA",
-            "phone": "(360) 970-5585",
-            "website": "http://tasguru.com",
-            "image": "images/tas.webp",
-            "membershipLevel": "Silver",
-            "description": "Specialized in transformative strategies for business success."
+            "name": "Macys",
+            "address": "625 Black Lake Blvd Olympia, WA 98502",
+            "phone": "(360) 534-7000",
+            "website": "https://www.macys.com/",
+            "image": "macys-logo.webp",
+            "membershipLevel": "Silver"
         },
         {
             "name": "Strimple Solutions",
@@ -23,8 +22,7 @@
             "phone": "(360) 555-9012",
             "website": "https://www.strimplesolutions.com",
             "image": "images/10.webp",
-            "membershipLevel": "Bronze",
-            "description": "Providing innovative business solutions to drive growth."
+            "membershipLevel": "Bronze"
         },
         {
             "name": "Heritage Bank",
@@ -32,8 +30,7 @@
             "phone": "(360) 943-1500",
             "website": "https://www.heritagebanknw.com",
             "image": "images/heritagebank.webp",
-            "membershipLevel": "Platinum",
-            "description": "A community-focused bank serving businesses and individuals."
+            "membershipLevel": "Platinum"
         },
         {
             "name": "Nisqually Red Wind Casino",
@@ -41,8 +38,7 @@
             "phone": "(866) 946-2444",
             "website": "https://www.redwindcasino.com",
             "image": "images/redcasino.webp",
-            "membershipLevel": "Gold",
-            "description": "Popular casino offering games, entertainment, and dining."
+            "membershipLevel": "Gold"
         },
         {
             "name": "Puget Sound Healthcare",
@@ -50,8 +46,7 @@
             "phone": "(360) 754-9792",
             "website": "http://www.pugetsoundskillednursing.com",
             "image": "images/7.webp",
-            "membershipLevel": "Silver",
-            "description": "Providing quality healthcare services for veterans and the community."
+            "membershipLevel": "Silver"
         },
         {
             "name": "Pioneer Tech Solutions",
@@ -59,8 +54,7 @@
             "phone": "(929) 677-6155",
             "website": "https://pioneersupport.us",
             "image": "images/pioneer.webp",
-            "membershipLevel": "Platinum",
-            "description": "Delivering cutting-edge technology solutions for businesses."
+            "membershipLevel": "Platinum"
         },
         {
             "name": "Up Town Grill",
@@ -68,8 +62,7 @@
             "phone": "(360) 338-0340",
             "website": "https://www.uptowngrill514.com",
             "image": "images/uptown.webp",
-            "membershipLevel": "Gold",
-            "description": "A local favorite offering scratch-kitchen food and craft cocktails."
+            "membershipLevel": "Gold"
         }
     ]
 }
