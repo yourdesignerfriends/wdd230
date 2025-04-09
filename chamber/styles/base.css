@@ -224,6 +224,12 @@ figure {
     text-align: center;
 }
 /* ------------------ JOIN PAGE -------------------- */
+.join-flex {
+    padding: .5rem;
+    background-color: var(--primary-white);
+    display: block;
+    gap: .5rem;
+}
 .form-container {
     margin: .5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -232,41 +238,44 @@ figure {
     background-color: var(--primary-white);
     max-width: 450px;
 }
+fieldset {
+    border: 1px solid var(--accent2-blue);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 1rem;
+} 
+.form-s legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--secondary-crimson);
+    padding: 0 10px;
+}
 .form-s label {
     display: block;
     padding-top: 1rem;
     color: var(--accent2-blue);
     font-size: .9rem;
 }
-.form-s div {
-    padding-top: 1rem;
-    color: var(--secondary-crimson);
-    font-size: .9rem;
-}
-.form-s input[type="submit"]:hover {
-    background-color: var(--secondary-crimson);
-    color: var(--primary-white);
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-}
-/* ERROR MSG REQUIERED AND VALID */
-.form-s input:required {
+/* FORM */
+.form-s input:required:invalid,
+.form-s textarea:invalid {
     border-left: solid 8px red;
 }
-.form-s input:required:valid {
-    border-left: solid 8px green;
-}
-#formmessage {
-    color: red;
-    font-weight: bold;
-    display: none;
-}
-#formmessage.visible {
-    display: block;
-}
-.error-background {
-    border: 2px solid red;
+/* TEXT, PASSWORD AND EMAIL INPUT */
+.form-s input[type="text"],
+.form-s input[type="tel"],
+.form-s input[type="email"],
+form select,
+form textarea {
     background-color: var(--primary-white);
+    display: block;
+    border: solid 1px var(--accent2-blue);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--accent2-blue);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
 }
 /* SUBMIT INPUT */
 .form-s input[type="submit"]{
@@ -282,6 +291,36 @@ figure {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 1.1rem;
     display: block;
+}
+.form-s input[type="submit"]:hover {
+    background-color: var(--secondary-crimson);
+    color: var(--primary-white);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+/* ERROR MSG REQUIERED AND VALID */
+.form-s input:required {
+    border-left: solid 8px red;
+}
+.form-s input:required:valid {
+    border-left: solid 8px green;
+}
+.form-s div {
+    padding-top: 1rem;
+    color: var(--secondary-crimson);
+    font-size: .9rem;
+}
+#formmessage {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+#formmessage.visible {
+    display: block;
+}
+.error-background {
+    border: 2px solid red;
+    background-color: var(--primary-white);
 }
 /* TABLE */
 table {
@@ -346,18 +385,6 @@ th[colspan="5"] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     margin: 1rem;
 }
-fieldset {
-    border: 1px solid var(--accent2-blue);
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 1rem;
-} 
-.form-s legend {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--secondary-crimson);
-    padding: 0 10px;
-}
 /* QUOTE */
 .quote-section {
     text-align: center;
@@ -375,12 +402,6 @@ fieldset {
 .quote-section blockquote {
     font-size: 1.2rem;
     font-style: italic;
-}
-.join-flex {
-    padding: .5rem;
-    background-color: var(--primary-white);
-    display: block;
-    gap: .5rem;
 }
 .thankyou {
     text-align: center;
@@ -572,25 +593,4 @@ figcaption {
 #listBtn:hover {
     background-color: var(--secondary-crimson); 
     color: var(--primary-white); 
-}
-/* FORM */
-.form-s input:required:invalid,
-.form-s textarea:invalid {
-    border-left: solid 8px red;
-}
-/* TEXT, PASSWORD AND EMAIL INPUT */
-.form-s input[type="text"],
-.form-s input[type="tel"],
-.form-s input[type="email"],
-form select,
-form textarea {
-    background-color: var(--accent2-blue);
-    display: block;
-    border: solid 1px var(--accent2-blue);
-    border-radius: 6px;
-    padding: .75rem;
-    color: var(--accent2-blue);
-    width: 100%;
-    max-width: 400px;
-    appearance: none;
 }
