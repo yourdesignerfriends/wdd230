@@ -13,139 +13,7 @@ body {
     font-weight: 400;
     margin: auto;
 }
-/* --------- COMBINED SELECTORS ------------ */
-.upcoming-events h2,
-.weather-card h2,
-.company-spotlights h2,
-.sidebar h3,
-.discover-pictures h3,
-.form-container h2,
-.thankyou h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--accent2-blue);
-    font-weight: bold; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    margin-bottom: 1.5rem; 
-}
-.event-card h3,
-figcaption {
-    font-size: 1.4rem;
-    margin: 10px 0;
-    color: var(--secondary-crimson);
-}
-#members.list h2, 
-#members.list p, 
-#members.list a {
-    display: block;
-    margin: 0.5rem 0;
-    text-align: left;
-}
-/* CARDS */
-.upcoming-events,
-.weather-card,
-.company-spotlights,
-.discover-grid,
-.join-grid {
-    padding: 20px;
-    background-color: var(--primary-white);
-    display: block;
-    padding: 1rem;
-    gap: 1rem;
-}
-.event-card,
-.sidebar {
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    text-align: left;
-}
-/* IMAGES */
-#weather img,
-#forecast img {
-    width: 80px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: var(--accent1-gray);
-}
-/* DARK MODE */
-.dark-mode #menu,
-.dark-mode footer,
-.dark-mode #copyright,
-.dark-mode .links a,
-.dark-mode .hero-label h1,
-.dark-mode .visits {
-    color: var(--primary-white);
-}
-.dark-mode,
-.dark-mode header,
-.dark-mode footer {
-    background-color: var(--accent2-blue);
-}
-.dark-mode .hero-label {
-    background: rgba(0, 0, 0, 0.6);
-}
-.dark-mode h1::first-letter {
-    color: var(--primary-white);
-}
-.dark-mode #gridBtn:hover,
-.dark-mode #listBtn:hover,
-.dark-mode #gridBtn,
-.dark-mode #listBtn {
-    background-color: var(--primary-white);
-}
-.dark-mode #gridBtn,
-.dark-mode #listBtn {
-    color: var(--accent2-blue);
-}
-.dark-mode #gridBtn:hover,
-.dark-mode #listBtn:hover {
-    color: var(--secondary-crimson);
-}
-/* BUTTONS */
-.common-btn,
-#gridBtn,
-#listBtn {
-    display: inline-block;
-    background-color: var(--accent2-blue); 
-    color: var(--primary-white);
-    font-size: 1.2rem;
-    font-weight: 500;
-    border-radius: 8px;
-    margin-top: 1rem;
-    padding: 0.6rem 1.5rem;
-    border: none;
-    text-decoration: none;
-}
-.common-btn:hover,
-#gridBtn:hover,
-#listBtn:hover {
-    background-color: var(--secondary-crimson); 
-    color: var(--primary-white); 
-}
-.form-s input:required:invalid,
-.form-s textarea:invalid {
-    border-left: solid 8px red;
-}
-/* TEXT, PASSWORD AND EMAIL INPUT */
-.form-s input[type="text"],
-.form-s input[type="tel"],
-.form-s input[type="email"],
-form select,
-form textarea {
-    background-color: var(--accent2-blue);
-    display: block;
-    border: solid 1px var(--accent2-blue);
-    border-radius: 6px;
-    padding: .75rem;
-    color: var(--accent2-blue);
-    width: 100%;
-    max-width: 400px;
-    appearance: none;
-}
-/* ----------------- HEADER ------------------*/
+/* ----------------- HEADER (ALL PAGES) ------------------*/
 header {
     display: flex;
     align-items: center;
@@ -188,7 +56,7 @@ header img {
     border: none;
     position: absolute;
 }
-/* -------------- NAVEGATION --------------- */
+/* -------------- NAVIGATION (ALL PAGES) --------------- */
 .navigation {
     background-color: var(--accent2-blue);
 }
@@ -212,7 +80,7 @@ header img {
     color: var(--accent2-blue);
     border: 2px solid var(--accent2-blue);
 }
-/* ---------------- MAIN HERO ----------------- */
+/* ---------------- MAIN HERO (ALL PAGES) ----------------- */
 .hero {
     position: relative;
 }
@@ -248,99 +116,7 @@ h1::first-letter {
     font-weight: bold;
     color: var(--secondary-crimson);
 }
-/* EVENT */
-.visits {
-    text-align: left;
-    font-size: 1.8rem;
-    color: var(--secondary-crimson);
-    font-style: italic;
-    font-weight: 600; 
-    margin-left: 1rem;
-}
-.links a:hover {
-    text-decoration: underline;
-    transform: scale(1.05);
-}
-.event-card p {
-    font-size: 1rem;
-    color: var(--accent2-blue);
-}
-/* MAIN CARD */
-.card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.event-img, 
-.discover-pictures img {
-    width: 100%; 
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.event-card h3 + p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--accent2-blue);
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-.sidebar h3 + p {
-    font-weight: bold;
-    text-decoration: underline;
-}
-/* WEATHER */
-#weather {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    text-align: center;
-    background-color: var(--primary-white);
-}
-#forecast {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-}
-#forecast section {
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin: 0.5rem 0;
-    text-align: center;
-    background-color: var(--primary-white);
-    color: var(--accent2-blue);
-}
-/* DISCOVERY MAIN */
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-.sidebar li {
-    margin-bottom: 0.5rem;
-    padding-left: 1rem;
-    position: relative;
-    color: var(--accent2-blue);
-}
-.sidebar li::before {
-    content: ">";
-    color: var(--secondary-crimson);
-    position: absolute;
-    left: 0;
-}
-figure {
-    margin: 0 auto 1rem;
-    text-align: center;
-}
-/* FOOTER */
+/* --------------- FOOTER (ALL PAGES) ---------------- */
 footer {
     text-align: left;
     color: var(--accent2-blue);
@@ -375,7 +151,90 @@ footer section {
     width: 20px; 
     height: auto;  
 }
-/* FORM */
+/* ---------------- HOME PAGE --------------------- */
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--primary-white);
+}
+#forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+#forecast section {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    background-color: var(--primary-white);
+    color: var(--accent2-blue);
+}
+/* ---------------- DISCOVER PAGE --------------------- */
+.visits {
+    text-align: left;
+    font-size: 1.4rem;
+    color: var(--secondary-crimson);
+    font-style: italic;
+    font-weight: 600; 
+    margin-left: 1rem;
+}
+.links a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+.event-card p {
+    font-size: 1rem;
+    color: var(--accent2-blue);
+}
+/* MAIN CARD */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.event-card h3 + p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent2-blue);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.sidebar h3 + p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+    color: var(--accent2-blue);
+}
+.sidebar li::before {
+    content: ">";
+    color: var(--secondary-crimson);
+    position: absolute;
+    left: 0;
+}
+figure {
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+/* ------------------ JOIN PAGE -------------------- */
 .form-container {
     margin: .5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -595,4 +454,146 @@ th[colspan="5"] {
 }
 #members.list img {
     display: none;
+}
+/* --------- COMBINED SELECTORS ------------ */
+.upcoming-events h2,
+.weather-card h2,
+.company-spotlights h2,
+.sidebar h3,
+.discover-pictures h3,
+.form-container h2,
+.thankyou h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--accent2-blue);
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 1.5rem; 
+}
+.event-card h3,
+figcaption {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: var(--secondary-crimson);
+}
+#members.list h2, 
+#members.list p, 
+#members.list a {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+/* CARDS */
+.upcoming-events,
+.weather-card,
+.company-spotlights,
+.discover-grid,
+.join-grid {
+    padding: 20px;
+    background-color: var(--primary-white);
+    display: block;
+    padding: 1rem;
+    gap: 1rem;
+}
+.event-card,
+.sidebar {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: left;
+}
+/* IMAGES */
+#weather img,
+#forecast img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--accent1-gray);
+}
+.event-img, 
+.discover-pictures img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* DARK MODE */
+.dark-mode #menu,
+.dark-mode footer,
+.dark-mode #copyright,
+.dark-mode .links a,
+.dark-mode .hero-label h1,
+.dark-mode .visits {
+    color: var(--primary-white);
+}
+.dark-mode,
+.dark-mode header,
+.dark-mode footer {
+    background-color: var(--accent2-blue);
+}
+.dark-mode .hero-label {
+    background: rgba(0, 0, 0, 0.6);
+}
+.dark-mode h1::first-letter {
+    color: var(--primary-white);
+}
+/* DARK MODE DIRECTORY PAGE BTN */
+.dark-mode #gridBtn:hover,
+.dark-mode #listBtn:hover,
+.dark-mode #gridBtn,
+.dark-mode #listBtn {
+    background-color: var(--primary-white);
+}
+.dark-mode #gridBtn,
+.dark-mode #listBtn {
+    color: var(--accent2-blue);
+}
+.dark-mode #gridBtn:hover,
+.dark-mode #listBtn:hover {
+    color: var(--secondary-crimson);
+}
+/* BUTTONS */
+.common-btn,
+#gridBtn,
+#listBtn {
+    display: inline-block;
+    background-color: var(--accent2-blue); 
+    color: var(--primary-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    text-decoration: none;
+}
+.common-btn:hover,
+#gridBtn:hover,
+#listBtn:hover {
+    background-color: var(--secondary-crimson); 
+    color: var(--primary-white); 
+}
+/* FORM */
+.form-s input:required:invalid,
+.form-s textarea:invalid {
+    border-left: solid 8px red;
+}
+/* TEXT, PASSWORD AND EMAIL INPUT */
+.form-s input[type="text"],
+.form-s input[type="tel"],
+.form-s input[type="email"],
+form select,
+form textarea {
+    background-color: var(--accent2-blue);
+    display: block;
+    border: solid 1px var(--accent2-blue);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--accent2-blue);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
 }
