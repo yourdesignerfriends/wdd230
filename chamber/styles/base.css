@@ -116,6 +116,7 @@ figcaption {
     font-size: 1.2rem;
     border-radius: 8px;
     margin-top: 1rem;
+    border: none;
 }
 .read-more-btn:hover,
 #gridBtn:hover,
@@ -255,7 +256,6 @@ h1::first-letter {
     font-weight: 600; 
     margin-left: 1rem;
 }
-
 .links a:hover {
     text-decoration: underline;
     transform: scale(1.05);
@@ -270,7 +270,8 @@ h1::first-letter {
     flex-direction: column;
     gap: 20px;
 }
-.event-img, .discover-pictures img {
+.event-img, 
+.discover-pictures img {
     width: 100%; 
     height: auto;
     border-radius: 8px;
