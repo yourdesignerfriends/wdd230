@@ -13,6 +13,138 @@ body {
     font-weight: 400;
     margin: auto;
 }
+/* COMBINED SELECTORS */
+.upcoming-events h2,
+.weather-card h2,
+.company-spotlights h2,
+.sidebar h3,
+.discover-pictures h3,
+.form-container h2,
+.thankyou h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--accent2-color);
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 1.5rem; 
+}
+.upcoming-events,
+.weather-card,
+.company-spotlights,
+.discover-grid,
+.join-grid {
+    padding: 20px;
+    background-color: var(--primary-color);
+    display: block;
+    padding: 1rem;
+    gap: 1rem;
+}
+.event-card,
+.sidebar {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: left;
+}
+.event-card h3,
+figcaption {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: var(--secondary-color);
+}
+#weather img,
+#forecast img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--accent1-color);
+}
+#forecast section:hover,
+#weather section:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+#members.list h2, 
+#members.list p, 
+#members.list a {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+.dark-mode #menu,
+.dark-mode footer,
+.dark-mode #copyright,
+.dark-mode .links a,
+.dark-mode .hero-label h1,
+.dark-mode .visits {
+    color: var(--primary-color);
+}
+.dark-mode,
+.dark-mode header,
+.dark-mode footer {
+    background-color: var(--accent2-color);
+}
+.dark-mode .hero-label {
+    background: rgba(0, 0, 0, 0.6);
+}
+.dark-mode h1::first-letter {
+    color: var(--primary-color);
+}
+.dark-mode #gridBtn:hover,
+.dark-mode #listBtn:hover,
+.dark-mode #gridBtn,
+.dark-mode #listBtn {
+    background-color: var(--primary-color);
+}
+.dark-mode #gridBtn,
+.dark-mode #listBtn {
+    color: var(--accent2-color);
+}
+.dark-mode #gridBtn:hover,
+.dark-mode #listBtn:hover {
+    color: var(--secondary-color);
+}
+#gridBtn,
+#listBtn {
+    color: var(--primary-color);
+    border-radius: 8px;
+    padding: .5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--accent2-color);
+    cursor: pointer;
+    border: none;
+    margin: 1rem;
+    width: 20%;
+}
+#gridBtn:hover,
+#listBtn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.form-s input:required:invalid,
+.form-s textarea:invalid {
+    border-left: solid 8px red;
+}
+/* TEXT, PASSWORD AND EMAIL INPUT */
+.form-s input[type="text"],
+.form-s input[type="tel"],
+.form-s input[type="email"],
+form select,
+form textarea {
+    background-color: var(--accent-color);
+    display: block;
+    border: solid 1px var(--accent2-color);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--accent2-color);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
 /* HEADER */
 header {
     display: flex;
@@ -132,33 +264,7 @@ h1::first-letter {
     font-weight: 600; 
     margin-left: 1rem;
 }
-/* GLOBAL STYLES */
-.upcoming-events h2,
-.weather-card h2,
-.company-spotlights h2,
-.sidebar h3,
-.discover-pictures h3,
-.form-container h2,
-.thankyou h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--accent2-color);
-    font-weight: bold; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    margin-bottom: 1.5rem; 
-}
-.upcoming-events,
-.weather-card,
-.company-spotlights,
-.discover-grid,
-.join-grid {
-    padding: 20px;
-    background-color: var(--primary-color);
-    display: block;
-    padding: 1rem;
-    gap: 1rem;
-}
+
 .links a:hover {
     text-decoration: underline;
     transform: scale(1.05);
@@ -173,25 +279,12 @@ h1::first-letter {
     flex-direction: column;
     gap: 20px;
 }
-.event-card,
-.sidebar {
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    text-align: left;
-}
 .event-img, .discover-pictures img {
     width: 100%; 
     height: auto;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.event-card h3,
-figcaption {
-    font-size: 1.4rem;
-    margin: 10px 0;
-    color: var(--secondary-color);
 }
 .event-card h3 + p {
     font-size: 1.2rem;
@@ -205,14 +298,6 @@ figcaption {
     text-decoration: underline;
 }
 /* WEATHER */
-#weather img,
-#forecast img {
-    width: 80px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: var(--accent1-color);
-}
 #weather {
     display: flex;
     flex-direction: column;
@@ -240,11 +325,6 @@ figcaption {
     text-align: center;
     background-color: #fff;
     color: var(--accent2-color);
-}
-#forecast section:hover,
-#weather section:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
 }
 /* DISCOVERY MAIN */
 .sidebar ul {
@@ -312,39 +392,6 @@ footer section {
     border: none;
     position: absolute;
 }
-.dark-mode #menu,
-.dark-mode footer,
-.dark-mode #copyright,
-.dark-mode .links a,
-.dark-mode .hero-label h1,
-.dark-mode .visits {
-    color: var(--primary-color);
-}
-.dark-mode,
-.dark-mode header,
-.dark-mode footer {
-    background-color: var(--accent2-color);
-}
-.dark-mode .hero-label {
-    background: rgba(0, 0, 0, 0.6);
-}
-.dark-mode h1::first-letter {
-    color: var(--primary-color);
-}
-.dark-mode #gridBtn:hover,
-.dark-mode #listBtn:hover,
-.dark-mode #gridBtn,
-.dark-mode #listBtn {
-    background-color: var(--primary-color);
-}
-.dark-mode #gridBtn,
-.dark-mode #listBtn {
-    color: var(--accent2-color);
-}
-.dark-mode #gridBtn:hover,
-.dark-mode #listBtn:hover {
-    color: var(--secondary-color);
-}
 /* FORM */
 .form-container {
     margin: .5rem;
@@ -371,32 +418,12 @@ footer section {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
-/* TEXT, PASSWORD AND EMAIL INPUT */
-.form-s input[type="text"],
-.form-s input[type="tel"],
-.form-s input[type="email"],
-form select,
-form textarea {
-    background-color: var(--accent-color);
-    display: block;
-    border: solid 1px var(--accent2-color);
-    border-radius: 6px;
-    padding: .75rem;
-    color: var(--accent2-color);
-    width: 100%;
-    max-width: 400px;
-    appearance: none;
-}
 /* ERROR MSG REQUIERED AND VALID */
 .form-s input:required {
     border-left: solid 8px red;
 }
 .form-s input:required:valid {
     border-left: solid 8px green;
-}
-.form-s input:required:invalid,
-.form-s textarea:invalid {
-    border-left: solid 8px red;
 }
 #formmessage {
     color: red;
@@ -538,25 +565,6 @@ th[colspan="5"] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 1rem;
 }
-#gridBtn,
-#listBtn {
-    color: var(--primary-color);
-    border-radius: 8px;
-    padding: .5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: var(--accent2-color);
-    cursor: pointer;
-    border: none;
-    margin: 1rem;
-    width: 20%;
-}
-#gridBtn:hover,
-#listBtn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
 /* DIRECTORY GRID STYLE */
 #members.grid section {
     padding: 1rem;
@@ -601,13 +609,6 @@ th[colspan="5"] {
 }
 #members.list > section:nth-child(even) {
     background-color: #f0f0f0;
-}
-#members.list h2, 
-#members.list p, 
-#members.list a {
-    display: block;
-    margin: 0.5rem 0;
-    text-align: left;
 }
 #members.list img {
     display: none;
