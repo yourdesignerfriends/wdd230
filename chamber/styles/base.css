@@ -45,6 +45,7 @@ p {
     text-decoration: none;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
+    cursor: pointer;
 }
 .navigation a:hover {
     background-color: var(--primary-color);
