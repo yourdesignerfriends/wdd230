@@ -12,6 +12,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin: auto;
+    color: var(--accent2-blue);
 }
 /* ----------------- HEADER (ALL PAGES) ------------------*/
 header {
@@ -152,6 +153,15 @@ footer section {
     height: auto;  
 }
 /* ---------------- HOME PAGE --------------------- */
+.event-card p {
+    font-size: 1rem;
+    color: var(--accent2-blue);
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 #weather {
     display: flex;
     flex-direction: column;
@@ -192,27 +202,6 @@ footer section {
 .links a:hover {
     text-decoration: underline;
     transform: scale(1.05);
-}
-.event-card p {
-    font-size: 1rem;
-    color: var(--accent2-blue);
-}
-/* MAIN CARD */
-.card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.event-card h3 + p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--accent2-blue);
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-.sidebar h3 + p {
-    font-weight: bold;
-    text-decoration: underline;
 }
 .sidebar ul {
     list-style: none;
@@ -483,6 +472,14 @@ figcaption {
     display: block;
     margin: 0.5rem 0;
     text-align: left;
+}
+.event-card h3 + p,
+.sidebar h3 + p {
+    font-size: 1.2rem;
+    color: var(--accent2-blue);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-decoration: underline;
 }
 /* CARDS */
 .upcoming-events,
