@@ -312,7 +312,6 @@ footer section {
     border: none;
     position: absolute;
 }
-.dark-mode .navigation a, 
 .dark-mode #menu,
 .dark-mode footer,
 .dark-mode #copyright,
@@ -322,9 +321,6 @@ footer section {
     color: var(--primary-color);
 }
 .dark-mode,
-.dark-mode .navigation a:hover, 
-.dark-mode .navigation .active, 
-.dark-mode .navigation, 
 .dark-mode header,
 .dark-mode footer {
     background-color: var(--accent2-color);
