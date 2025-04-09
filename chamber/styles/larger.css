@@ -101,7 +101,7 @@
         flex-wrap: wrap;
         gap: 1rem;
     }
-    #members.list h2, 
+    #members.list h3, 
     #members.list p, 
     #members.list a {
         flex: 1;
