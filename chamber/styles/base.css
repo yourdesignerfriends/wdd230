@@ -426,6 +426,10 @@ th[colspan="5"] {
 .btn-container{ 
     text-align: center;
 }
+.btn-container h2{ 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
 #members.grid section {
     padding: 1rem;
     background-color: var(--primary-white);
