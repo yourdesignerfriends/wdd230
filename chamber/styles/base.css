@@ -229,7 +229,7 @@ figure {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     padding: .5rem;
-    background-color: var(--accent1-gray);
+    background-color: var(--primary-white);
     max-width: 450px;
 }
 .form-s label {
@@ -283,29 +283,6 @@ figure {
     font-size: 1.1rem;
     display: block;
 }
-/* RECORD PAGE STYLE */
-.record-msg {
-    text-align: center;
-}
-.record-msg img {
-    max-width: 40%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    margin: 1rem;
-}
-fieldset {
-    border: 1px solid var(--accent2-blue);
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 1rem;
-} 
-.form-s legend {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--secondary-crimson);
-    padding: 0 10px;
-}
 /* TABLE */
 table {
     border-collapse: collapse;
@@ -340,7 +317,7 @@ tr:nth-child(2) th {
     text-align: center;
 }
 tbody tr:nth-child(even) {
-    background-color: #dadbde;
+    background-color: var(--accent1-gray);
 }
 th[colspan="5"] {
     text-align: center;
@@ -357,6 +334,29 @@ th[colspan="5"] {
     padding: .5rem;
     text-align: left;
     max-width: 420px;
+}
+/* ----------------- RECORD PAGE -------------------- */
+.record-msg {
+    text-align: center;
+}
+.record-msg img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+fieldset {
+    border: 1px solid var(--accent2-blue);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 1rem;
+} 
+.form-s legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--secondary-crimson);
+    padding: 0 10px;
 }
 /* QUOTE */
 .quote-section {
@@ -444,7 +444,7 @@ th[colspan="5"] {
 #members.list img {
     display: none;
 }
-/* --------- COMBINED SELECTORS ------------ */
+/* ------------ COMBINED SELECTORS ------------ */
 .upcoming-events h2,
 .weather-card h2,
 .company-spotlights h2,
