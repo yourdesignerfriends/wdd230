@@ -3,9 +3,6 @@
         max-width: 960px;
     }
     /* -------------- HEADER (ALL PAGES) --------------- */
-    h1 {
-        text-align: center;
-    }
     /* HAMBURGUER MENU */
     #menu {
         display: none;
