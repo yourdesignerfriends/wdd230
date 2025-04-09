@@ -174,7 +174,7 @@ header img {
 #menu.open::before {
     content: "x";
 }
-.open a {
+.navigation.open a {
     display: block;
 }
 /* DARK MODE BTN */
