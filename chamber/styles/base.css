@@ -105,24 +105,23 @@ figcaption {
     color: var(--secondary-crimson);
 }
 /* BUTTONS */
+.read-more-btn,
 #gridBtn,
 #listBtn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: var(--accent2-blue); 
     color: var(--primary-white);
-    border-radius: 8px;
-    padding: .5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
     font-size: 1.2rem;
-    font-weight: bold;
-    background-color: var(--accent2-blue);
-    cursor: pointer;
-    border: none;
-    margin: 1rem;
-    width: 20%;
+    border-radius: 8px;
+    margin-top: 1rem;
 }
+.read-more-btn:hover,
 #gridBtn:hover,
 #listBtn:hover {
-    background-color: var(--secondary-crimson);
-    color: var(--primary-color);
+    background-color: var(--secondary-crimson); 
+    color: var(--primary-white); 
 }
 .form-s input:required:invalid,
 .form-s textarea:invalid {
@@ -248,22 +247,6 @@ h1::first-letter {
     color: var(--secondary-crimson);
 }
 /* EVENT */
-.read-more-btn {
-    display: inline-block;
-    padding: 0.6rem 1.5rem;
-    background-color: var(--secondary-crimson); 
-    color: var(--primary-white);
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.read-more-btn:hover {
-    background-color: var(--secondary-crimson); 
-    transform: scale(1.05);
-    color: var(--primary-white); 
-}
 .visits {
     text-align: left;
     font-size: 1.8rem;
