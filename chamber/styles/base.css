@@ -105,20 +105,21 @@ figcaption {
     color: var(--secondary-crimson);
 }
 /* BUTTONS */
-.read-more-btn,
+.common-btn,
 #gridBtn,
 #listBtn {
     display: inline-block;
-    padding: 0.6rem 1.5rem;
     background-color: var(--accent2-blue); 
     color: var(--primary-white);
-    text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 500;
     border-radius: 8px;
     margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
     border: none;
+    text-decoration: none;
 }
-.read-more-btn:hover,
+.common-btn:hover,
 #gridBtn:hover,
 #listBtn:hover {
     background-color: var(--secondary-crimson); 
