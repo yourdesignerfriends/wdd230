@@ -1,7 +1,7 @@
 :root {
     --primary-white: #ffffff;
     --secondary-crimson: #a00d17;
-    --accent1-gray: #dadbde;
+    --accent1-gray: #fafafa;
     --accent2-blue: #011e79;
 }
 * {
@@ -14,7 +14,7 @@ body {
     margin: auto;
     color: var(--accent2-blue);
 }
-/* ----------------- HEADER (ALL PAGES) ------------------*/
+/* ----------------- HEADER (ALL PAGES) -----------------*/
 header {
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@ header img {
     color: var(--accent2-blue);
     border: 2px solid var(--accent2-blue);
 }
-/* ---------------- MAIN HERO (ALL PAGES) ----------------- */
+/* -------------- MAIN HERO (ALL PAGES) ---------------- */
 .hero {
     position: relative;
 }
@@ -117,7 +117,7 @@ h1::first-letter {
     font-weight: bold;
     color: var(--secondary-crimson);
 }
-/* --------------- FOOTER (ALL PAGES) ---------------- */
+/* --------------- FOOTER (ALL PAGES) ------------------ */
 footer {
     text-align: left;
     color: var(--accent2-blue);
@@ -152,7 +152,7 @@ footer section {
     width: 20px; 
     height: auto;  
 }
-/* ---------------- HOME PAGE --------------------- */
+/* -------------------- HOME PAGE ---------------------- */
 .event-card p {
     font-size: 1rem;
     color: var(--accent2-blue);
@@ -190,7 +190,12 @@ footer section {
     background-color: var(--primary-white);
     color: var(--accent2-blue);
 }
-/* ---------------- DISCOVER PAGE --------------------- */
+#weather img,
+#forecast img {
+    width: 80px;
+    height: auto;
+}
+/* ----------------- DISCOVER PAGE --------------------- */
 .visits {
     text-align: left;
     font-size: 1.4rem;
@@ -223,7 +228,7 @@ figure {
     margin: 0 auto 1rem;
     text-align: center;
 }
-/* ------------------ JOIN PAGE -------------------- */
+/* -------------------- JOIN PAGE ---------------------- */
 .join-flex {
     padding: .5rem;
     background-color: var(--primary-white);
@@ -374,7 +379,7 @@ th[colspan="5"] {
     text-align: left;
     max-width: 420px;
 }
-/* ----------------- RECORD PAGE -------------------- */
+/* ------------------- RECORD PAGE --------------------- */
 .record-msg {
     text-align: center;
 }
@@ -417,7 +422,7 @@ th[colspan="5"] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 1rem;
 }
-/* ----------------- DIRECTORY PAGE --------------------- */
+/* ----------------- DIRECTORY PAGE -------------------- */
 #members.grid section {
     padding: 1rem;
     background-color: var(--primary-white);
@@ -460,32 +465,10 @@ th[colspan="5"] {
     background-color: var(--accent1-gray);
 }
 #members.list > section:nth-child(even) {
-    background-color: #f0f0f0;
+    background-color: var(--accent1-gray);
 }
 #members.list img {
     display: none;
-}
-/* ------------ COMBINED SELECTORS ------------ */
-.upcoming-events h2,
-.weather-card h2,
-.company-spotlights h2,
-.sidebar h3,
-.discover-pictures h3,
-.form-container h2,
-.thankyou h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--accent2-blue);
-    font-weight: bold; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    margin-bottom: 1.5rem; 
-}
-.event-card h3,
-figcaption {
-    font-size: 1.4rem;
-    margin: 10px 0;
-    color: var(--secondary-crimson);
 }
 #members.list h2, 
 #members.list p, 
@@ -494,51 +477,7 @@ figcaption {
     margin: 0.5rem 0;
     text-align: left;
 }
-.event-card h3 + p,
-.sidebar h3 + p {
-    font-size: 1.2rem;
-    color: var(--accent2-blue);
-    margin-top: 5px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-}
-/* CARDS */
-.upcoming-events,
-.weather-card,
-.company-spotlights,
-.discover-grid,
-.join-grid {
-    padding: 20px;
-    background-color: var(--primary-white);
-    display: block;
-    padding: 1rem;
-    gap: 1rem;
-}
-.event-card,
-.sidebar {
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    text-align: left;
-}
-/* IMAGES */
-#weather img,
-#forecast img {
-    width: 80px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: var(--accent1-gray);
-}
-.event-img, 
-.discover-pictures img {
-    width: 100%; 
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-/* DARK MODE */
+/* --------------------- DARK MODE --------------------- */
 .dark-mode #menu,
 .dark-mode footer,
 .dark-mode #copyright,
@@ -573,6 +512,63 @@ figcaption {
 .dark-mode #listBtn:hover {
     color: var(--secondary-crimson);
 }
+/* ------------------ COMBINED SELECTORS --------------- */
+.upcoming-events h2,
+.weather-card h2,
+.company-spotlights h2,
+.sidebar h3,
+.discover-pictures h3,
+.form-container h2,
+.thankyou h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--accent2-blue);
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 1.5rem; 
+}
+.event-card h3,
+figcaption {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: var(--secondary-crimson);
+}
+.event-card h3 + p,
+.sidebar h3 + p {
+    font-size: 1.2rem;
+    color: var(--accent2-blue);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* CARDS */
+.upcoming-events,
+.weather-card,
+.company-spotlights,
+.discover-grid,
+.join-grid {
+    padding: 20px;
+    background-color: var(--primary-white);
+    display: block;
+    padding: 1rem;
+    gap: 1rem;
+}
+.event-card,
+.sidebar {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: left;
+}
+/* IMAGES */
+.event-img, 
+.discover-pictures img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* BUTTONS */
 .common-btn,
 #gridBtn,
@@ -584,6 +580,7 @@ figcaption {
     font-weight: 500;
     border-radius: 8px;
     margin-top: 1rem;
+    margin-left: .5rem;
     padding: 0.6rem 1.5rem;
     border: none;
     text-decoration: none;
