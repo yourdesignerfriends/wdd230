@@ -417,7 +417,7 @@ th[colspan="5"] {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 1rem;
 }
-/* DIRECTORY GRID STYLE */
+/* ----------------- DIRECTORY PAGE --------------------- */
 #members.grid section {
     padding: 1rem;
     background-color: var(--primary-white);
