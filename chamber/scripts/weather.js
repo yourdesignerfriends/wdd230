@@ -36,9 +36,15 @@ function displayWeather(data) {
     const section = document.createElement('section');
     const title = document.createElement('h3');
     const temperature = document.createElement('p');
+    const date = document.createElement('p');
     const figure = document.createElement('figure');
     const icon = document.createElement('img');
     const figCaption = document.createElement('figcaption');
+
+    const rawDate = new Date();
+    const options = { weekday: 'long', day: 'numeric', year: 'numeric' };
+    const formattedDate = rawDate.toLocaleDateString('en-US', options);
+    date.textContent = `Today: ${formattedDate}`;
 
     title.textContent = `Actual Weather in ${data.name}`;
     temperature.innerHTML = `The current temperature is: ${data.main.temp}&deg;F`;
@@ -50,6 +56,7 @@ function displayWeather(data) {
 
     weather.appendChild(section);
     section.appendChild(title);
+    section.appendChild(date);
     section.appendChild(figure);
     figure.appendChild(icon);
     figure.appendChild(figCaption);
@@ -57,7 +64,15 @@ function displayWeather(data) {
 }
 
 function displayForecast(data) {
-    const threeDayForecast = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
+    const header = document.createElement('h3');
+    header.textContent = "Three (3) day temperature forecast";
+    forecast.appendChild(header);
+
+    const threeDayForecast = data.list.filter(item => {
+        const rawDate = new Date(item.dt * 1000);
+        const today = new Date();
+        return rawDate.getDate() !== today.getDate();
+    }).filter((item, index) => index % 8 === 0).slice(0, 3);
 
     threeDayForecast.forEach(day => {
         const section = document.createElement('section');
@@ -67,8 +82,12 @@ function displayForecast(data) {
         const icon = document.createElement('img');
         const figCaption = document.createElement('figcaption');
 
-        date.textContent = `Date: ${day.dt_txt}`;
-        temp.textContent = `Temperature: ${day.main.temp}&deg;F`;
+        const rawDate = new Date(day.dt * 1000);
+        const options = { weekday: 'long', day: 'numeric', year: 'numeric' };
+        const formattedDate = rawDate.toLocaleDateString('en-US', options);
+        date.textContent = formattedDate;
+
+        temp.textContent = `Temperature: ${day.main.temp}°F`;
         icon.setAttribute('src', `https://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`);
         icon.setAttribute('alt', day.weather[0].description);
         icon.setAttribute('width', '80');
