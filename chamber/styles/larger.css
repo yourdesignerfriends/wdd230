@@ -46,11 +46,25 @@
         justify-content: space-between;
         gap: 20px;
     }
+    .weather-card {
+        max-width: 800px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     #forecast {
         flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+    #forecast-container h3 {
+        text-align: center;
+        margin-bottom: 1rem;
         width: 100%;
+    }
+    #forecast section {
+        flex: 1;
+        max-width: 250px;
     }
     /* ----------------- DISCOVER PAGE ----------------- */
     .event-card {

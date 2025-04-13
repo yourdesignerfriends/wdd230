@@ -34,7 +34,6 @@ async function apiFetchForecast() {
 
 function displayWeather(data) {
     const section = document.createElement('section');
-    const title = document.createElement('h3');
     const temperature = document.createElement('p');
     const date = document.createElement('p');
     const figure = document.createElement('figure');
@@ -46,7 +45,6 @@ function displayWeather(data) {
     const formattedDate = rawDate.toLocaleDateString('en-US', options);
     date.textContent = `Today: ${formattedDate}`;
 
-    title.textContent = `Actual Weather in ${data.name}`;
     temperature.innerHTML = `The current temperature is: ${data.main.temp}&deg;F`;
     icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
     icon.setAttribute('alt', data.weather[0].description);
@@ -55,7 +53,6 @@ function displayWeather(data) {
     figCaption.textContent = data.weather[0].description;
 
     weather.appendChild(section);
-    section.appendChild(title);
     section.appendChild(date);
     section.appendChild(figure);
     figure.appendChild(icon);
@@ -64,10 +61,6 @@ function displayWeather(data) {
 }
 
 function displayForecast(data) {
-    const header = document.createElement('h3');
-    header.textContent = "Three (3) day temperature forecast";
-    forecast.appendChild(header);
-
     const threeDayForecast = data.list.filter(item => {
         const rawDate = new Date(item.dt * 1000);
         const today = new Date();
