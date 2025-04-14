@@ -49,6 +49,7 @@
     #forecast {
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     /* ----------------- DISCOVER PAGE ----------------- */
     .event-card {
