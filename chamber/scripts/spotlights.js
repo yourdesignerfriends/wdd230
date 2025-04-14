@@ -30,7 +30,7 @@ function displaySpotlights(members) {
 
     randomMembers.forEach(member => {
         const card = document.createElement('div');
-        card.classList.add('event-card');
+        card.classList.add('spot-card');
 
         const img = document.createElement('img');
         img.setAttribute('src', member.image);
