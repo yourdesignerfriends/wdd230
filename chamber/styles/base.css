@@ -212,11 +212,6 @@ footer section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
 }
-#forecast {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
 /* ----------------- DISCOVER PAGE --------------------- */
 .visits {
     text-align: left;
