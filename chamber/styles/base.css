@@ -206,7 +206,13 @@ footer section {
     flex-direction: column;
 }
 .upcoming-events,
+.company-spotlights,
 .weather-information {
+    padding: 20px;
+    background-color: var(--primary-white);
+    display: block;
+    padding: 1rem;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 /* ----------------- DISCOVER PAGE --------------------- */
@@ -565,8 +571,6 @@ th[colspan="5"] {
     margin-bottom: 10px;
 }
 /* CARDS */
-.upcoming-events,
-.company-spotlights,
 .discover-grid,
 .join-grid {
     padding: 20px;
