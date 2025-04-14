@@ -162,18 +162,13 @@ footer section {
     flex-direction: column;
     gap: 20px;
 }
-#weather img,
 #forecast img {
     width: 80px;
     height: auto;
 }
 /* Actual Weather */
 #weather section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     background-color: var(--primary-white);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -182,12 +177,24 @@ footer section {
 #weather section h3 {
     background-color: var(--accent2-blue);
     color: var(--primary-white);
-    padding: 1.2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px 8px 0 0;
+}
+#weather section p {
+    text-align: center;
+    padding: 1rem;
 }
 #weather figcaption {
     font-size: 1.4rem;
     color: var(--secondary-crimson);
     text-transform: capitalize;
+}
+#weather section img {
+    width: 80px;
+    height: auto;
 }
 .weather-card {
     display: flex;
