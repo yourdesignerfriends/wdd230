@@ -53,7 +53,6 @@
     }
     #forecast section {
         flex: 1;
-        max-width: 250px;
     }
     /* ----------------- DISCOVER PAGE ----------------- */
     .event-card {

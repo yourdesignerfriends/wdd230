@@ -34,8 +34,8 @@ async function apiFetchForecast() {
 
 function displayWeather(data) {
     const section = document.createElement('section');
-    const temperature = document.createElement('p');
     const date = document.createElement('h3');
+    const temperature = document.createElement('p');
     const figure = document.createElement('figure');
     const icon = document.createElement('img');
     const figCaption = document.createElement('figcaption');
@@ -43,9 +43,9 @@ function displayWeather(data) {
     const rawDate = new Date();
     const options = { weekday: 'long', day: 'numeric', year: 'numeric' };
     const formattedDate = rawDate.toLocaleDateString('en-US', options);
-    date.textContent = `Today: ${formattedDate}`;
+    date.textContent = `Today - ${formattedDate}`;
 
-    temperature.innerHTML = `The current temperature is: ${data.main.temp}&deg;F`;
+    temperature.innerHTML = `Temperature: ${data.main.temp}&deg;F`;
     icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
     icon.setAttribute('alt', data.weather[0].description);
     icon.setAttribute('width', '80');
@@ -87,12 +87,12 @@ function displayForecast(data) {
         icon.setAttribute('height', '80');
         figCaption.textContent = day.weather[0].description;
 
+        forecast.appendChild(section);
+        section.appendChild(date);
+        section.appendChild(figure);
         figure.appendChild(icon);
         figure.appendChild(figCaption);
-        section.appendChild(date);
         section.appendChild(temp);
-        section.appendChild(figure);
-        forecast.appendChild(section);
     });
 }
 
