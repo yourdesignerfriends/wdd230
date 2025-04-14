@@ -208,12 +208,8 @@ footer section {
 .upcoming-events,
 .company-spotlights,
 .weather-information {
-    padding: 20px;
     background-color: var(--primary-white);
-    display: block;
     padding: 1rem;
-    gap: 1rem;
-    margin-bottom: 2rem;
 }
 /* ----------------- DISCOVER PAGE --------------------- */
 .visits {
