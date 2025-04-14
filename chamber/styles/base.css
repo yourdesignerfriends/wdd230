@@ -167,6 +167,7 @@ footer section {
     width: 80px;
     height: auto;
 }
+/* Actual Weather */
 #weather section {
     display: flex;
     flex-direction: column;
@@ -177,12 +178,16 @@ footer section {
     background-color: var(--primary-white);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
-
 }
 #weather section h3 {
     background-color: var(--accent2-blue);
     color: var(--primary-white);
     padding: 1.2rem;
+}
+#weather figcaption {
+    font-size: 1.4rem;
+    color: var(--secondary-crimson);
+    text-transform: capitalize;
 }
 .weather-card {
     display: flex;
@@ -562,7 +567,7 @@ th[colspan="5"] {
     margin-bottom: 1.5rem; 
 }
 .event-card h3,
-figcaption {
+.discover-pictures figcaption {
     font-size: 1.4rem;
     margin: 10px 0;
     color: var(--secondary-crimson);
