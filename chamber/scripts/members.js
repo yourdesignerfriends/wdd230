@@ -12,7 +12,6 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {
-  //membersContainer.innerHTML = "";
   members.forEach((member) => {
     let card = document.createElement("section");
     let companyName = document.createElement("h3");

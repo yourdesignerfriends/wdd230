@@ -212,6 +212,17 @@ footer section {
     padding: 1rem;
     margin: 1rem;
 }
+#spot-container img {
+    width: 150px; 
+    height: auto;
+    object-fit: cover;
+}
+.event-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+}
 /* ----------------- DISCOVER PAGE --------------------- */
 .visits {
     text-align: left;
@@ -576,7 +587,6 @@ th[colspan="5"] {
     padding: 1rem;
     gap: 1rem;
 }
-.event-card,
 .sidebar {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -584,7 +594,6 @@ th[colspan="5"] {
     text-align: left;
 }
 /* IMAGES */
-.event-img, 
 .discover-pictures img {
     width: 100%; 
     height: auto;
