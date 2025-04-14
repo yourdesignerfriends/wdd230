@@ -35,7 +35,7 @@ async function apiFetchForecast() {
 function displayWeather(data) {
     const section = document.createElement('section');
     const temperature = document.createElement('p');
-    const date = document.createElement('p');
+    const date = document.createElement('h3');
     const figure = document.createElement('figure');
     const icon = document.createElement('img');
     const figCaption = document.createElement('figcaption');
