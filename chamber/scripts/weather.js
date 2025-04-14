@@ -69,7 +69,7 @@ function displayForecast(data) {
 
     threeDayForecast.forEach(day => {
         const section = document.createElement('section');
-        const date = document.createElement('p');
+        const date = document.createElement('h3');
         const temp = document.createElement('p');
         const figure = document.createElement('figure');
         const icon = document.createElement('img');

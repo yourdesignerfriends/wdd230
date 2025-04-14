@@ -167,14 +167,16 @@ footer section {
     height: auto;
 }
 /* Actual Weather */
-#weather section {
+#weather section,
+#forecast section {
     max-width: 300px;
     margin: 0 auto;
     background-color: var(--primary-white);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
 }
-#weather section h3 {
+#weather section h3,
+#forecast section h3 {
     background-color: var(--accent2-blue);
     color: var(--primary-white);
     padding: 1rem;
@@ -183,16 +185,19 @@ footer section {
     text-transform: uppercase;
     border-radius: 8px 8px 0 0;
 }
-#weather section p {
+#weather section p,
+#forecast section p {
     text-align: center;
     padding: 1rem;
 }
-#weather figcaption {
+#weather section figcaption,
+#forecast section figcaption {
     font-size: 1.4rem;
     color: var(--secondary-crimson);
     text-transform: capitalize;
 }
-#weather section img {
+#weather section img,
+#forecast section img {
     width: 80px;
     height: auto;
 }
@@ -207,30 +212,11 @@ footer section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
 }
-#weather-container,
-#forecast-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-}
 #forecast {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-#forecast section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--primary-white);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    text-align: center;
-    color: var(--accent2-blue);
-}
-
 /* ----------------- DISCOVER PAGE --------------------- */
 .visits {
     text-align: left;
@@ -559,7 +545,7 @@ th[colspan="5"] {
 }
 /* ------------------ COMBINED SELECTORS --------------- */
 .upcoming-events h2,
-.weather-card h2,
+#weather h2,
 .company-spotlights h2,
 .sidebar h3,
 .discover-pictures h3,
