@@ -493,6 +493,8 @@ th[colspan="5"] {
 /* ----------------- DIRECTORY PAGE -------------------- */
 .btn-container{ 
     text-align: center;
+    margin: .5rem;
+    padding: .5rem;
 }
 .btn-container h2{ 
     text-transform: uppercase; 
@@ -512,9 +514,7 @@ th[colspan="5"] {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
-#members.grid h3 {
-    font-size: 1rem;
-}
+#members.grid h3,
 #members.grid p {
     font-size: 1rem;
 }
