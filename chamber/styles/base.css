@@ -250,10 +250,18 @@ footer section {
     flex-grow: 1;
 }
 .banner button {
-    background: none;
+    background: var(--primary-white);
+    color: var(--secondary-crimson);
     border: none;
     font-size: 1.2rem;
+    font-weight: bolder;
     cursor: pointer;
+    padding: .7rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.banner button:hover {
+    color: var(--accent2-blue);
 }
 /* ----------------- DISCOVER PAGE --------------------- */
 .visits {
