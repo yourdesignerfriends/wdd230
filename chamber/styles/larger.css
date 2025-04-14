@@ -46,6 +46,10 @@
         justify-content: space-between;
         gap: 20px;
     }
+    #forecast {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     /* ----------------- DISCOVER PAGE ----------------- */
     .event-card {
         flex: 1 1 calc(50% - 20px);
