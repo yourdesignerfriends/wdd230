@@ -205,6 +205,10 @@ footer section {
     display: flex;
     flex-direction: column;
 }
+.upcoming-events,
+.weather-information {
+    margin-bottom: 2rem;
+}
 /* ----------------- DISCOVER PAGE --------------------- */
 .visits {
     text-align: left;
@@ -533,7 +537,7 @@ th[colspan="5"] {
 }
 /* ------------------ COMBINED SELECTORS --------------- */
 .upcoming-events h2,
-#weather h2,
+.weather-information h2,
 .company-spotlights h2,
 .sidebar h3,
 .discover-pictures h3,
@@ -562,7 +566,6 @@ th[colspan="5"] {
 }
 /* CARDS */
 .upcoming-events,
-.weather-card,
 .company-spotlights,
 .discover-grid,
 .join-grid {
